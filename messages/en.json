@@ -9,10 +9,6 @@
 	},
 	"Navigation": {
 		"home": "Home",
-		"about": "About Us",
-		"prices": "Prices",
-		"deals": "Deals",
-		"gallery": "Gallery",
-		"contacts": "Contacts"
+		"map": "Map"
 	}
 }

@@ -13,6 +13,7 @@ export default function LocaleSwitcher() {
 		>
 			{locales.map((cur) => (
 				<option
+					className="text-black"
 					key={cur}
 					value={cur}
 				>

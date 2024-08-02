@@ -24,7 +24,6 @@ export default function Home({ params: { locale } }) {
 			<HomePage title={t('title')}>
 				<Hero hero={t('hero')} />
 			</HomePage>
-			<LocaleSwitcher />
 		</>
 	)
 }
