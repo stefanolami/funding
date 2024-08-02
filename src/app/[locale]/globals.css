@@ -30,4 +30,16 @@
 	.text-balance {
 		text-wrap: balance;
 	}
+	.selected {
+		@apply !fill-yellow-400;
+	}
+	.hovered {
+		@apply fill-red-300;
+	}
+	.covered-countries {
+		@apply hover:fill-red-300;
+	}
+	.uncovered-countries {
+		@apply fill-slate-300 stroke-black stroke-[.2px];
+	}
 }

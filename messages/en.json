@@ -10,5 +10,8 @@
 	"Navigation": {
 		"home": "Home",
 		"map": "Map"
+	},
+	"Map": {
+		"title": "Map"
 	}
 }
