@@ -1,7 +1,7 @@
 import { useTranslations } from 'next-intl'
 import { unstable_setRequestLocale } from 'next-intl/server'
 import { getTranslations } from 'next-intl/server'
-import Map from '@/components/Map'
+import YourAccess from '@/components/your-access/YourAccess'
 
 export async function generateMetadata({ params: { locale } }) {
 	const t = await getTranslations({
@@ -20,7 +20,7 @@ export default function About({ params: { locale } }) {
 	const heroMessage = t('hero')
 	return (
 		<div>
-			<Map />
+			<YourAccess />
 		</div>
 	)
 }
