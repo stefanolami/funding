@@ -10,5 +10,8 @@
 	"Navigation": {
 		"home": "Acasă",
 		"map": "Hartă"
+	},
+	"Map": {
+		"title": "Hartă"
 	}
 }

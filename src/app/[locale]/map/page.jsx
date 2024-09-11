@@ -1,7 +1,7 @@
 import { useTranslations } from 'next-intl'
 import { unstable_setRequestLocale } from 'next-intl/server'
 import { getTranslations } from 'next-intl/server'
-import Hero from '@/components/Hero'
+import Map from '@/components/Map'
 
 export async function generateMetadata({ params: { locale } }) {
 	const t = await getTranslations({
@@ -14,12 +14,13 @@ export async function generateMetadata({ params: { locale } }) {
 	}
 }
 
-export default function Home({ params: { locale } }) {
+export default function About({ params: { locale } }) {
 	unstable_setRequestLocale(locale)
 	const t = useTranslations('Index')
+	const heroMessage = t('hero')
 	return (
-		<>
-			<Hero hero={t('hero')} />
-		</>
+		<div>
+			<Map />
+		</div>
 	)
 }
