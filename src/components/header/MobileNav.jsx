@@ -7,6 +7,8 @@ import MobileLocaleSwitcher from './MobileLocaleSwitcher'
 
 export default function MobileNav({ messages }) {
 	const [active, setActive] = useState(false)
+	const [whoWeAre, setWhoWeAre] = useState(false)
+	const [whyUs, setWhyUs] = useState(false)
 
 	useEffect(() => {
 		if (active) {
@@ -17,7 +19,7 @@ export default function MobileNav({ messages }) {
 	}, [active])
 
 	return (
-		<div className="md:hidden flex flex-row font-unna">
+		<div className="md:hidden flex flex-row font-unna text-lg">
 			<MobileLocaleSwitcher />
 			<MotionConfig
 				transition={{
@@ -91,7 +93,7 @@ export default function MobileNav({ messages }) {
 				</motion.button>
 				<motion.div>
 					<motion.div
-						className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 backdrop-blur flex flex-col justify-around items-center"
+						className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 backdrop-blur flex flex-col justify-start items-center"
 						initial={false}
 						animate={active ? 'open' : 'closed'}
 						variants={{
@@ -107,31 +109,88 @@ export default function MobileNav({ messages }) {
 							},
 						}}
 					>
-						<nav className="flex flex-col justify-center gap-4 items-center text-white">
+						<nav className="flex flex-col justify-start gap-4 items-center text-white mt-24">
 							<Link
 								onClick={() => setActive(false)}
-								href="/our-team"
+								href="/poe"
 							>
-								{messages.ourTeam}
+								{messages.poe}
 							</Link>
 							<Link
 								onClick={() => setActive(false)}
-								href="/our-pillars"
+								href="/your-access"
 							>
-								{messages.ourPillars}
+								{messages.yourAccess}
 							</Link>
+							<span onClick={() => setWhoWeAre((pv) => !pv)}>
+								{messages.whoWeAre}
+							</span>
+							{whoWeAre && (
+								<div className="flex flex-col justify-center gap-2 items-center text-sm">
+									<Link
+										onClick={() => setActive(false)}
+										href="/about-us"
+									>
+										{messages.aboutUs}
+									</Link>
+									<Link
+										onClick={() => setActive(false)}
+										href="/our-team"
+									>
+										{messages.ourTeam}
+									</Link>
+								</div>
+							)}
+
 							<Link
 								onClick={() => setActive(false)}
-								href="/our-products"
+								href="/services"
 							>
-								{messages.ourProducts}
+								{messages.services}
 							</Link>
-							<Link
-								onClick={() => setActive(false)}
-								href="/our-projects"
-							>
-								{messages.ourProjects}
-							</Link>
+							<div onClick={() => setWhyUs((pv) => !pv)}>
+								{messages.whyUs}
+							</div>
+							{whyUs && (
+								<div className="flex flex-col justify-center gap-2 items-center text-sm">
+									<Link
+										onClick={() => setActive(false)}
+										href="/about-us"
+									>
+										{messages.overview}
+									</Link>
+									<Link
+										onClick={() => setActive(false)}
+										href="/our-team"
+									>
+										{messages.sectorExpertise}
+									</Link>
+									<Link
+										onClick={() => setActive(false)}
+										href="/our-team"
+									>
+										{messages.partnersPortfolios}
+									</Link>
+									<Link
+										onClick={() => setActive(false)}
+										href="/our-team"
+									>
+										{messages.endorsements}
+									</Link>
+									<Link
+										onClick={() => setActive(false)}
+										href="/our-team"
+									>
+										{messages.publications}
+									</Link>
+									<Link
+										onClick={() => setActive(false)}
+										href="/our-team"
+									>
+										{messages.clientCodex}
+									</Link>
+								</div>
+							)}
 							<Link
 								onClick={() => setActive(false)}
 								href="/contact"

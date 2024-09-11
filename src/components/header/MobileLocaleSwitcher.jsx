@@ -52,7 +52,7 @@ const LocaleElement = ({ locale, handler }) => {
 				onClick={handler}
 				id={locale}
 				variants={actionIconVariants}
-				className="flex items-center justify-center font-unna font-normal text-xs text-white bg-primary-light w-10 h-10 rounded-full py-1 mt-2 cursor-pointer"
+				className="flex items-center justify-center font-unna font-normal text-xs text-white bg-primary-light w-10 h-10 rounded-full py-1 mt-2 cursor-pointer border-2 border-primary"
 			>
 				{text}
 			</motion.span>
