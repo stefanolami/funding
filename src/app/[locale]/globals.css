@@ -19,6 +19,6 @@
 		@apply fill-slate-300 stroke-black stroke-[.2px];
 	}
 	#desktop-nav a {
-		@apply hover:scale-110 flex items-center justify-center;
+		@apply flex items-center justify-center;
 	}
 }
