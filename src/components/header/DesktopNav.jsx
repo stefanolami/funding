@@ -9,26 +9,26 @@ export default function DesktopNav({ messages }) {
 		>
 			<nav className="grid grid-cols-5 text-center uppercase h-full *:px-4 text-base">
 				<Link
-					className={'hover:bg-primary-light'}
+					className={'hover:bg-primary-light hover:shadow-xl'}
 					href="/poe"
 				>
 					{messages.poe}
 				</Link>
 
 				<Link
-					className={'hover:bg-primary-light'}
+					className={'hover:bg-primary-light hover:shadow-xl'}
 					href="/your-access"
 				>
 					{messages.yourAccess}
 				</Link>
 				<Link
-					className={'hover:bg-primary-light'}
+					className={'hover:bg-primary-light hover:shadow-xl'}
 					href="/services"
 				>
 					{messages.services}
 				</Link>
 				<Link
-					className={'hover:bg-primary-light'}
+					className={'hover:bg-primary-light hover:shadow-xl'}
 					href="/contact"
 				>
 					{messages.contact}
