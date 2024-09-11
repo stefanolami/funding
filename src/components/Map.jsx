@@ -113,7 +113,7 @@ export default function MapChart() {
 										? ' covered-countries '
 										: ' uncovered-countries '
 								} */
-										className="hover:brightness-110"
+										className="hover:brightness-110 stoke-[.5px] cursor-pointer"
 									/>
 								))
 							}
