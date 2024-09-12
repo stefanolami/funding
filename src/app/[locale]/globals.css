@@ -18,7 +18,10 @@
 	.uncovered-countries {
 		@apply fill-slate-300 stroke-black stroke-[.2px];
 	}
-	#desktop-nav a {
-		@apply flex items-center justify-center;
+	#desktop-nav > a {
+		@apply flex items-center justify-center hover:shadow-xl hover:scale-110;
+	}
+	.desktop-nav-li a {
+		@apply w-full h-full;
 	}
 }

@@ -1,7 +1,7 @@
 'use client'
 
 import { Link } from '../../navigation'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { motion, useScroll, useMotionValueEvent } from 'framer-motion'
 import { cn } from '@/utils/cn'
 import Image from 'next/image'
@@ -17,6 +17,11 @@ export default function Header(messages) {
 	const path = usePathname()
 
 	const [hidden, setHidden] = useState(false)
+	const [inverted, setInverted] = useState(false)
+	const [style, setStyle] = useState({
+		background: '#004A6A',
+		color: '#FFFFFF',
+	})
 
 	useMotionValueEvent(scrollY, 'change', (latest) => {
 		const previous = scrollY.getPrevious()
@@ -27,13 +32,23 @@ export default function Header(messages) {
 		}
 	})
 
+	useEffect(() => {
+		if (path == '/your-access') {
+			setStyle({ background: 'transparent', color: '#004A6A' })
+			setInverted(true)
+		} else {
+			setStyle({ background: '#004A6A', color: '#FFFFFF' })
+			setInverted(false)
+		}
+	}, [path])
+
 	return (
 		<motion.div
 			variants={{
 				visible: {
 					y: 0,
-					backgroundColor: '#004A6A',
-					color: '#FFFFFF',
+					backgroundColor: style.background,
+					color: style.color,
 				},
 				hidden: {
 					y: '-100%',
@@ -59,7 +74,10 @@ export default function Header(messages) {
 				/>
 			</Link>
 
-			<DesktopNav messages={navTrans} />
+			<DesktopNav
+				inverted={inverted}
+				messages={navTrans}
+			/>
 
 			<MobileNav messages={navTrans} />
 		</motion.div>
