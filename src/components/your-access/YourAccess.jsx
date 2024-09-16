@@ -28,8 +28,8 @@ export default function YourAccess() {
 	}
 	const handleResetRegion = () => {
 		setSelectedRegion('')
-		setZoomCenter([0, 43])
-		setZoomLevel(0.8)
+		setZoomCenter([35, 30])
+		setZoomLevel(0.6)
 	}
 	const handleZoom = (level, center) => {
 		setZoomLevel(level)
@@ -37,8 +37,41 @@ export default function YourAccess() {
 	}
 	return (
 		<div className="w-full flex flex-row items-center justify-start -mt-20 -mb-32">
-			<div className="ml-[8%] -mt-24 h-screen w-72 bg-primary-light"></div>
-			<div className="w-full h-screen -mt-24 relative">
+			<div className="ml-[7%] -mt-24 h-screen w-[270px] bg-primary-light">
+				{/* {!selectedRegion && (
+					<ul className="m-12">
+						{Object.values(regions).map((region) => (
+							<li
+								className="cursor-pointer"
+								onClick={() => handleRegionCLick(region)}
+								key={region.value}
+							>
+								{region.name}
+							</li>
+						))}
+					</ul>
+				)}
+				{selectedRegion && (
+					<ul className="m-12">
+						{regions[selectedRegion].countries.map((country) => (
+							<li
+								className="cursor-pointer"
+								key={country}
+							>
+								{country}
+							</li>
+						))}
+						<li
+							className="mt-10 cursor-pointer"
+							onClick={handleResetRegion}
+							key="back"
+						>
+							Back to Regions
+						</li>
+					</ul>
+				)} */}
+			</div>
+			<div className="w-[70%] h-screen -mt-24 relative">
 				<ComposableMap
 					projection="geoMercator"
 					className="absolute top-0 w-full"
@@ -46,7 +79,8 @@ export default function YourAccess() {
 					<ZoomableGroup
 						center={zoomCenter}
 						zoom={zoomLevel}
-						minZoom={0.4}
+						minZoom={zoomLevel}
+						maxZoom={zoomLevel}
 						onMoveEnd={({ coordinates, zoom }) => {
 							console.log('zooming', coordinates, zoom)
 						}}
