@@ -66,7 +66,7 @@ export default function SectorSelector() {
 	}, [locale, urlParams]) */
 
 	return (
-		<div>
+		<div className="font-jose">
 			<div className="flex flex-col xl:flex-row items-center justify-center gap-4 xl:gap-12 mx-auto mt-10 xl:mt-12 3xl:mt-24">
 				{activeSector !== 'Aviation' ? (
 					<SectorButton

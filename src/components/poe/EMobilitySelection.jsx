@@ -107,7 +107,7 @@ export default function EMobilitySelection() {
 	return (
 		<>
 			{Object.keys(storeSector).length > 0 && geographies.length > 0 ? (
-				<div className="mt-10 mb-20 mx-auto w-[90%] max-w-[1550px] text-primary text-xs xl:text-base">
+				<div className="font-jose mt-10 mb-20 mx-auto w-[90%] max-w-[1550px] text-primary text-xs xl:text-base">
 					<div className="flex flex-col items-center mx-auto justify-center gap-2 mb-10">
 						<div className="mx-auto font-unna font-bold text-lg xl:text-4xl flex items-center justify-center bg-primary-light overflow-hidden text-white w-40 xl:w-96 h-9 xl:h-20">
 							{storeSector.label}

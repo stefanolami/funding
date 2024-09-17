@@ -21,7 +21,7 @@ export default function PoePage({ params: { locale } }) {
 	return (
 		<div className="mb-24 xl:mb-20">
 			<PoeHero />
-			<p className="text-center text-primary text-xs md:text-base xl:text-2xl m-5 xl:mt-16 3xl:mt-24 xl:mx-52 3xl:mx-80 font-normal">
+			<p className="text-center text-primary font-jose text-xs md:text-base xl:text-2xl m-5 xl:mt-16 3xl:mt-24 xl:mx-52 3xl:mx-80 font-normal">
 				POE is a dynamic, real-time alert system designed to connect
 				stakeholders—businesses, NGOs, and individuals—with public
 				funding, public financing, and public tender opportunities. POE
