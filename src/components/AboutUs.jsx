@@ -2,9 +2,9 @@ export default function AboutUs() {
 	return (
 		<div
 			id="about-us"
-			className="bg-primary-light -mt-24 xl:-mt-44 pt-16 xl:pt-24 pb-10 xl:pb-12"
+			className="bg-primary-light -mt-24 xl:-mt-44 pt-16 xl:pt-24 pb-10 xl:pb-20 -mb-16 xl:-mb-32"
 		>
-			<h1 className="font-unna font-bold text-xl xl:text-[36px] text-center text-white py-10">
+			<h1 className="font-unna font-bold text-xl xl:text-[36px] text-center text-white mt-16 py-10">
 				ABOUT US
 			</h1>
 			<div className="w-[90%] xl:w-3/4 mx-auto font-jose text-xs xl:text-lg text-white text-justify">

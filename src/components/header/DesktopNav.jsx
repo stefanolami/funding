@@ -36,24 +36,24 @@ export default function DesktopNav({ messages, inverted }) {
 				</Link>
 				<div className="group relative flex items-center justify-center cursor-pointer">
 					<span>{messages.whoWeAre}</span>
-					<ul className="hidden group-hover:flex flex-col items-center justify-center gap-1 w-full absolute top-full">
-						<li className="desktop-nav-li w-full bg-primary py-3 hover:scale-110 hover:shadow-xl mt-1 ">
-							<Link
-								href="/about-us"
-								className={inverted ? 'text-white' : ''}
-							>
-								{messages.aboutUs}
-							</Link>
-						</li>
-						<li className="desktop-nav-li w-full bg-primary py-3 hover:scale-110 hover:shadow-xl">
-							<Link
-								href="/our-team"
-								className={inverted ? 'text-white' : ''}
-							>
-								{messages.ourTeam}
-							</Link>
-						</li>
-					</ul>
+					<div className="hidden group-hover:flex flex-col items-center justify-center gap-1 w-full absolute top-full">
+						<Link
+							href="/about-us"
+							className={`desktop-nav-li w-full h-full bg-primary py-3 hover:scale-110 hover:shadow-xl mt-1 ${
+								inverted ? 'text-white' : ''
+							}`}
+						>
+							{messages.aboutUs}
+						</Link>
+						<Link
+							href="/our-team"
+							className={`desktop-nav-li w-full h-full bg-primary py-3 hover:scale-110 hover:shadow-xl mt-1 ${
+								inverted ? 'text-white' : ''
+							}`}
+						>
+							{messages.ourTeam}
+						</Link>
+					</div>
 				</div>
 				<Link
 					className={
@@ -67,56 +67,56 @@ export default function DesktopNav({ messages, inverted }) {
 				</Link>
 				<div className="group relative flex items-center justify-center cursor-pointer">
 					<span>{messages.whyUs}</span>
-					<ul className="hidden group-hover:flex flex-col items-center justify-center gap-1 w-full absolute top-full">
-						<li className="desktop-nav-li w-full bg-primary py-3 hover:scale-110 hover:shadow-xl mt-1 ">
-							<Link
-								href="/about-us"
-								className={inverted ? 'text-white' : ''}
-							>
-								{messages.overview}
-							</Link>
-						</li>
-						<li className="desktop-nav-li w-full bg-primary py-3 hover:scale-110 hover:shadow-xl">
-							<Link
-								href="/our-team"
-								className={inverted ? 'text-white' : ''}
-							>
-								{messages.sectorExpertise}
-							</Link>
-						</li>
-						<li className="desktop-nav-li w-full bg-primary py-3 hover:scale-110 hover:shadow-xl">
-							<Link
-								href="/our-team"
-								className={inverted ? 'text-white' : ''}
-							>
-								{messages.partnersPortfolios}
-							</Link>
-						</li>
-						<li className="desktop-nav-li w-full bg-primary py-3 hover:scale-110 hover:shadow-xl">
-							<Link
-								href="/our-team"
-								className={inverted ? 'text-white' : ''}
-							>
-								{messages.endorsements}
-							</Link>
-						</li>
-						<li className="desktop-nav-li w-full bg-primary py-3 hover:scale-110 hover:shadow-xl">
-							<Link
-								href="/our-team"
-								className={inverted ? 'text-white' : ''}
-							>
-								{messages.publications}
-							</Link>
-						</li>
-						<li className="desktop-nav-li w-full bg-primary py-3 hover:scale-110 hover:shadow-xl">
-							<Link
-								href="/our-team"
-								className={inverted ? 'text-white' : ''}
-							>
-								{messages.clientCodex}
-							</Link>
-						</li>
-					</ul>
+					<div className="hidden group-hover:flex flex-col items-center justify-center gap-1 w-full absolute top-full">
+						<Link
+							href="/about-us"
+							className={`desktop-nav-li w-full h-full bg-primary py-3 hover:scale-110 hover:shadow-xl mt-1 ${
+								inverted ? 'text-white' : ''
+							}`}
+						>
+							{messages.overview}
+						</Link>
+						<Link
+							href="/about-us"
+							className={`desktop-nav-li w-full h-full bg-primary py-3 hover:scale-110 hover:shadow-xl mt-1 ${
+								inverted ? 'text-white' : ''
+							}`}
+						>
+							{messages.sectorExpertise}
+						</Link>
+						<Link
+							href="/about-us"
+							className={`desktop-nav-li w-full h-full bg-primary py-3 hover:scale-110 hover:shadow-xl mt-1 ${
+								inverted ? 'text-white' : ''
+							}`}
+						>
+							{messages.partnersPortfolios}
+						</Link>
+						<Link
+							href="/about-us"
+							className={`desktop-nav-li w-full h-full bg-primary py-3 hover:scale-110 hover:shadow-xl mt-1 ${
+								inverted ? 'text-white' : ''
+							}`}
+						>
+							{messages.endorsements}
+						</Link>
+						<Link
+							href="/about-us"
+							className={`desktop-nav-li w-full h-full bg-primary py-3 hover:scale-110 hover:shadow-xl mt-1 ${
+								inverted ? 'text-white' : ''
+							}`}
+						>
+							{messages.publications}
+						</Link>
+						<Link
+							href="/about-us"
+							className={`desktop-nav-li w-full h-full bg-primary py-3 hover:scale-110 hover:shadow-xl mt-1 ${
+								inverted ? 'text-white' : ''
+							}`}
+						>
+							{messages.clientCodex}
+						</Link>
+					</div>
 				</div>
 				<Link
 					className={

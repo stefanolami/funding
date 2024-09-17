@@ -8,7 +8,7 @@ export default function OurTeam() {
 			id="our-team"
 			className="w-[90%] xl:w-[75%] mx-auto"
 		>
-			<h1 className="font-unna font-bold text-xl xl:text-[36px] text-center text-black py-10">
+			<h1 className="font-unna font-bold text-xl xl:text-[36px] text-center text-black pt-6 pb-10">
 				OUR TEAM
 			</h1>
 			<div className="w-[90%] mx-auto mb-6 xl:mb-16 text-[10px] xl:text-xl text-[#FF0000] text-center font-jose">
