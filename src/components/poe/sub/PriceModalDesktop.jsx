@@ -403,7 +403,7 @@ export default function PriceModalDesktop() {
 					TOTAL
 				</span>
 				<div className="bg-white w-full h-[2px]"></div>
-				<span className="flex flex-row justify-end w-full">
+				<span className="flex flex-row justify-end w-full py-3">
 					EUR {getTotalPrice()}
 				</span>
 			</div>

@@ -40,7 +40,7 @@ export default function SectorSelector() {
 
 	const handleContinue = () => {
 		if (geographies.length > 0 && Object.keys(storeSector).length > 0) {
-			router.push(`/${locale}/selection`)
+			router.push(`/${locale}/poe/selection`)
 		} else if (geographies.length === 0) {
 			setMissingGeographies('Please select at least one geography')
 		} else if (Object.keys(storeSector).length === 0) {

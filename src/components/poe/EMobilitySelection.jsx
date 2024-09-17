@@ -6,10 +6,10 @@ import { useRouter } from 'next/navigation'
 import GeographyModifier from './sub/GeographyModifier'
 import PriceModalMobile from './sub/PriceModalMobile'
 import PriceModalDesktop from './sub/PriceModalDesktop'
-import selectionData from '../data/selectionData'
-import { useStore } from '../store/store'
+import selectionData from '@/data/selectionData'
+import { useStore } from '@/store/store'
 import axios from 'axios'
-import Loading from './Loading'
+import Loading from '../Loading'
 
 export default function EMobilitySelection() {
 	const {
