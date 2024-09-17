@@ -32,7 +32,7 @@ export default function Header(messages) {
 		}
 	})
 
-	/* 	useEffect(() => {
+	useEffect(() => {
 		if (path == '/your-access') {
 			setStyle({ background: 'transparent', color: '#004A6A' })
 			setInverted(true)
@@ -40,7 +40,7 @@ export default function Header(messages) {
 			setStyle({ background: '#004A6A', color: '#FFFFFF' })
 			setInverted(false)
 		}
-	}, [path]) */
+	}, [path])
 
 	return (
 		<motion.div
