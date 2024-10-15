@@ -1,34 +1,42 @@
 import { Link } from '@/i18n/routing'
-import Image from 'next/image'
 
 export default function Footer() {
 	const socialMediaIcons = [
-		'/social-media/facebook.png',
-		'/social-media/instagram.png',
-		'/social-media/linkedin.png',
-		'/social-media/tiktok.png',
-		'/social-media/whatsapp.png',
-		'/social-media/x.png',
-		'/social-media/youtube.png',
+		{
+			icon: '/social-media/facebook.png',
+			alt: 'Facebook Icon',
+			url: 'https://www.facebook.com/profile.php?id=61566446167362',
+		},
+		{
+			icon: '/social-media/instagram.png',
+			alt: 'Instagram Icon',
+			url: 'https://www.instagram.com/groupontap/',
+		},
+		{
+			icon: '/social-media/linkedin.png',
+			alt: 'LinkedIn Icon',
+			url: 'https://www.linkedin.com/company/time-place-group/',
+		},
 	]
 
 	return (
-		<div className="w-full bg-primary h-[85px] xl:h-[280px] py-1 absolute bottom-0 flex flex-col items-center justify-between text-white">
-			<ul className="flex flex-row justify-center items-center gap-2 xl:gap-8 mt-2 xl:mt-12 mb-1">
-				{socialMediaIcons.map((icon, index) => {
+		<div className="w-full bg-primary h-[85px] xl:h-[200px] py-1 absolute bottom-0 flex flex-col items-center justify-between text-white">
+			<ul className="flex flex-row justify-center items-center gap-2 xl:gap-8 mt-2 xl:mt-8 mb-1">
+				{socialMediaIcons.map((element, index) => {
 					return (
 						<li
 							key={index}
 							className="w-4 xl:w-8 h-4 xl:h-8 relative"
 						>
 							<Link
-								href=""
+								href={element.url}
 								className="w-full h-full"
+								target="_blank"
 							>
 								{/* eslint-disable */}
 								<img
-									src={icon}
-									alt="Social Media Icon"
+									src={element.icon}
+									alt={element.alt}
 									className="w-full h-full"
 								></img>
 								{/* eslint-enable */}
@@ -51,13 +59,13 @@ export default function Footer() {
 					TERMS AND CONDITIONS
 				</Link>
 				<Link
-					href="privacy-policy"
+					href="/privacy-policy"
 					className="font-unna text-center px-4 xl:px-16"
 				>
 					PRIVACY POLICY
 				</Link>
 			</nav>
-			<span className="block font-jose italic text-[8px] xl:text-base text-center mb-1 xl:mb-5">
+			<span className="block font-jose text-[8px] xl:text-base text-center mb-1 xl:mb-3">
 				© 2024 Time&Place Funding. All rights reserved.
 			</span>
 		</div>
