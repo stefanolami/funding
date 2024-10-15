@@ -15,11 +15,11 @@ export const metadata: Metadata = {
 		url: 'https://www.fundingontap.com',
 		siteName: 'Time&Place Funding',
 		images: [
-			/* {
+			{
 				url: 'https://funding-kohl.vercel.app/web-app-manifest-1024x1024.png', // Must be an absolute URL
 				width: 1024,
 				height: 1024,
-			}, */
+			},
 			{
 				url: 'https://funding-kohl.vercel.app/web-app-manifest-512x512.png', // Must be an absolute URL
 				width: 512,
