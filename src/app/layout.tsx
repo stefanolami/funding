@@ -16,17 +16,17 @@ export const metadata: Metadata = {
 		siteName: 'Time&Place Funding',
 		images: [
 			/* {
-				url: 'https://funding-kohl.vercel.app/android-chrome-1024x1024.png', // Must be an absolute URL
+				url: 'https://funding-kohl.vercel.app/web-app-manifest-1024x1024.png', // Must be an absolute URL
 				width: 1024,
 				height: 1024,
 			}, */
 			{
-				url: 'https://funding-kohl.vercel.app/android-chrome-512x512.png', // Must be an absolute URL
+				url: 'https://funding-kohl.vercel.app/web-app-manifest-512x512.png', // Must be an absolute URL
 				width: 512,
 				height: 512,
 			},
 			{
-				url: 'https://funding-kohl.vercel.app/android-chrome-192x192.png', // Must be an absolute URL
+				url: 'https://funding-kohl.vercel.app/web-app-manifest-192x192.png', // Must be an absolute URL
 				width: 192,
 				height: 192,
 				alt: 'My custom alt',
