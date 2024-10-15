@@ -1,11 +1,10 @@
 'use client'
 
-import { Link } from '../../navigation'
+import { Link } from '@/i18n/routing'
 import { useState, useEffect } from 'react'
 import { motion, useScroll, useMotionValueEvent } from 'framer-motion'
-import { cn } from '@/utils/cn'
 import Image from 'next/image'
-import { usePathname } from '../../navigation'
+import { usePathname } from '@/i18n/routing'
 
 import DesktopNav from './DesktopNav'
 import MobileNav from './MobileNav'

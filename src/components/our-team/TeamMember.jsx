@@ -1,15 +1,15 @@
 import Endorsement from './Endorsement'
 import team from '@/data/team'
+import Image from 'next/image'
 
 export default function TeamMember({ name }) {
 	const member = Object.values(team).find((member) => member.path === name)
-	console.log(member)
 
 	return (
-		<div className="w-[90%] xl:w-[70%] mx-auto">
+		<div className="w-[90%] xl:w-[70%] mx-auto pt-8 xl:pt-20 pb-16 xl:pb-32 ">
 			<div className="w-full flex flex-row items-start justify-between mb-8">
-				<div className="mt-4 xl:mt-8">
-					<h2 className="font-unna font-bold text-base xl:text-[48px] mb-4 xl:mb-8 uppercase">
+				<div className=" xl:mt-8">
+					<h2 className="font-unna font-bold text-xl xl:text-[40px] mb-4 xl:mb-8 uppercase">
 						{member.name}
 					</h2>
 					<ul className="font-jose text-[10px] xl:text-lg italic">
@@ -18,9 +18,16 @@ export default function TeamMember({ name }) {
 						))}
 					</ul>
 				</div>
-				<div className="bg-primary-light w-1/4 aspect-[6/9]"></div>
+				<div className="w-1/4 aspect-[265/390] relative">
+					<Image
+						alt={`${member.name} Picture`}
+						src={member.img}
+						fill
+						sizes="(max-width: 640px) 50vw, 20vw"
+					/>
+				</div>
 			</div>
-			<div className="font-jose text-xs xl:text-lg text-justify mb-2 xl:mb-6">
+			<div className="font-jose text-xs xl:text-lg text-justify">
 				{member.introduction.map((element, index) => (
 					<p
 						className="mb-4 xl:mb-6"
@@ -29,9 +36,19 @@ export default function TeamMember({ name }) {
 						{element}
 					</p>
 				))}
+				{member.introductionEndorsement && (
+					<div>
+						<Endorsement
+							endorsement={member.introductionEndorsement}
+						/>
+					</div>
+				)}
 			</div>
 			{member.paragraphs.map((paragraph, index) => (
-				<div key={index}>
+				<div
+					key={index}
+					className=" mt-8 xl:mt-16"
+				>
 					<h3 className="font-unna font-bold text-xl xl:text-3xl mb-4 xl:mb-6">
 						{paragraph.title}
 					</h3>
@@ -45,6 +62,13 @@ export default function TeamMember({ name }) {
 							</p>
 						))}
 					</div>
+					{paragraph.list && (
+						<ul className="font-jose text-xs xl:text-lg mb-2 xl:mb-4 text-justify list-disc pl-6">
+							{paragraph.list.map((element, index) => (
+								<li key={index}>{element}</li>
+							))}
+						</ul>
+					)}
 					{paragraph.endorsement && (
 						<div>
 							<Endorsement endorsement={paragraph.endorsement} />
@@ -52,6 +76,11 @@ export default function TeamMember({ name }) {
 					)}
 				</div>
 			))}
+			{member.path === 'kjeld-olesen' && (
+				<p className="mb-4 xl:mb-6 font-jose text-xs xl:text-lg ">
+					Kjeld speaks Danish, English, and French.
+				</p>
+			)}
 			<div className="mt-10">
 				<h3 className="font-unna font-bold text-xl xl:text-3xl xl:mb-2">
 					Contact

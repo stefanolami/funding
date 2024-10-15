@@ -10,9 +10,6 @@ import {
 /* import countriesData from '../data/countriesData' */
 import regions from '@/data/regions'
 
-import { scaleLinear } from 'd3-scale'
-const colorScale = scaleLinear().domain([0, 1000]).range(['red', 'orange'])
-
 const geoUrl = 'https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json'
 
 export default function YourAccess() {

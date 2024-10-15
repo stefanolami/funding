@@ -1,7 +1,6 @@
 'use client'
 
-import { useState } from 'react'
-import { Link } from '../../navigation'
+import { Link } from '@/i18n/routing'
 import DesktopLocaleSwitcher from './DesktopLocaleSwitcher'
 
 export default function DesktopNav({ messages, inverted }) {
