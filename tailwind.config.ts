@@ -17,6 +17,7 @@ const config: Config = {
 				primary: '#004A6A',
 				'primary-light': '#009EC2',
 				grey: '#EAEAEA',
+				'grey-purple': '#BBB9D6',
 				'consulting-primary': '#354B83',
 				'consulting-secondary': '#FFF',
 				'consulting-tertiary': '#FFF',

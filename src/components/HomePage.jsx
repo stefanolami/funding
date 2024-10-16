@@ -21,7 +21,7 @@ export default function HomePage() {
 				funding, financing and tenders. Time&Place Funding: Your point
 				of access.
 			</p>
-			<div className="w-full bg-grey">
+			<div className="w-full bg-grey-purple">
 				<div className="mx-auto w-4/5 xl:w-3/4 max-w-[1250px] py-16">
 					<h2 className="font-unna font-bold text-xl xl:text-[40px] text-primary mb-10">
 						Our Presence, Your Opportunities
