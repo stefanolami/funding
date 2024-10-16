@@ -2,6 +2,7 @@ import { useTranslations } from 'next-intl'
 import { unstable_setRequestLocale } from 'next-intl/server'
 import { getTranslations } from 'next-intl/server'
 import Hero from '@/components/Hero'
+import HomePage from '@/components/HomePage'
 
 export async function generateMetadata({ params: { locale } }) {
 	const t = await getTranslations({
@@ -20,6 +21,7 @@ export default function Home({ params: { locale } }) {
 	return (
 		<>
 			<Hero hero={t('hero')} />
+			<HomePage />
 		</>
 	)
 }
