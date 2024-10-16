@@ -15,7 +15,7 @@ export default function HomePage() {
 					sizes="(max-width: 640px) 70vw, 40vw"
 				/>
 			</div>
-			<p className="my-12 font-jose mx-auto w-4/5 xl:w-3/4 max-w-[1250px] text-primary text-sm xl:text-2xl text-center">
+			<p className="my-12 font-jose mx-auto w-4/5 xl:w-2/3 max-w-[1250px] text-primary text-sm xl:text-xl text-center">
 				As big business or SME, as NGO or local administration you can
 				benefit from international, national, regional and local public
 				funding, financing and tenders. Time&Place Funding: Your point
@@ -75,9 +75,9 @@ export default function HomePage() {
 					</div>
 				</div>
 			</div> */}
-			<div className="bg-primary mx-auto h-[2px] w-4/5 xl:w-4/5 max-w-[1250px] mt-10"></div>
+			<div className="bg-primary mx-auto h-[2px] w-4/5 xl:w-4/5 max-w-[1250px] mt-20"></div>
 			<div className="w-full">
-				<div className="mx-auto w-4/5 xl:w-3/4 max-w-[1250px] py-16">
+				<div className="mx-auto w-4/5 xl:w-2/3 max-w-[1250px] py-20">
 					<h2 className="font-unna font-bold text-xl xl:text-[40px] text-primary mb-10">
 						Our Presence, Your Opportunities
 					</h2>
@@ -103,9 +103,9 @@ export default function HomePage() {
 					</div>
 				</div>
 			</div>
-			<div className="bg-primary mx-auto h-[2px] w-4/5 xl:w-4/5 max-w-[1250px] mt-10"></div>
+			<div className="bg-primary mx-auto h-[2px] w-4/5 xl:w-4/5 max-w-[1250px]"></div>
 			<div className="w-full">
-				<div className="mx-auto w-4/5 xl:w-3/4 max-w-[1250px] py-16">
+				<div className="mx-auto w-4/5 xl:w-2/3 max-w-[1250px] py-20">
 					<h2 className="font-unna font-bold text-xl xl:text-[40px] text-primary mb-10">
 						(Some of) Our Capacities
 					</h2>
