@@ -7,7 +7,7 @@ export default function HomePage() {
 			id="home"
 			className="pb-16 xl:pb-32 w-full mx-auto"
 		>
-			<div className="mt-6 xl:mt-16 relative mx-auto w-3/4 xl:w-[20%] aspect-[353/150]">
+			<div className="mt-10 md:mt-16 relative mx-auto w-2/5 md:w-[20%] aspect-[353/150]">
 				<Image
 					src={'/logos/funding-logo-home.png'}
 					alt="Group Logo"
@@ -15,25 +15,25 @@ export default function HomePage() {
 					sizes="(max-width: 640px) 70vw, 40vw"
 				/>
 			</div>
-			<p className="my-12 font-jose mx-auto w-4/5 xl:w-2/3 max-w-[1250px] text-primary text-sm xl:text-xl text-center">
+			<p className="my-10 lg:my-12 font-jose mx-auto w-4/5 xl:w-2/3 max-w-[1250px] text-primary text-sm xl:text-xl text-center">
 				As big business or SME, as NGO or local administration you can
 				benefit from international, national, regional and local public
 				funding, financing and tenders. Time&Place Funding: Your point
 				of access.
 			</p>
-			<div className="bg-primary mx-auto h-[2px] w-4/5 xl:w-4/5 max-w-[1250px] mt-20"></div>
+			<div className="bg-primary mx-auto h-[2px] w-4/5 xl:w-4/5 max-w-[1250px] mt-12 lg:mt-20"></div>
 			<div className="w-full">
-				<div className="mx-auto w-4/5 xl:w-2/3 max-w-[1250px] py-20">
-					<h2 className="font-unna font-bold text-xl xl:text-[40px] text-primary mb-10">
+				<div className="mx-auto w-4/5 xl:w-2/3 max-w-[1250px] py-12 lg:py-20">
+					<h2 className="font-unna font-bold text-3xl xl:text-[40px] text-primary mb-10 text-center">
 						Our Presence, Your Opportunities
 					</h2>
-					<p className="text-primary font-jose text-base xl:text-xl mb-16">
+					<p className="text-primary font-jose text-base xl:text-xl mb-10 lg:mb-16 text-center">
 						With a global network of public funding, financing and
 						tenders professionals, we provide local access to
 						opportunities of all sizes for your competitive
 						proposals.
 					</p>
-					<div className="w-1/2 mx-auto flex flex-row justify-between items-center">
+					<div className="w-full lg:w-1/2 mx-auto flex flex-col gap-4 lg:flex-row justify-between items-center">
 						<Link
 							className="w-52 h-9 flex items-center justify-center bg-primary-light rounded-md shadow-md hover:shadow-lg text-white font-jose font-bold text-base"
 							href="/our-team"
@@ -51,17 +51,17 @@ export default function HomePage() {
 			</div>
 			<div className="bg-primary mx-auto h-[2px] w-4/5 xl:w-4/5 max-w-[1250px]"></div>
 			<div className="w-full">
-				<div className="mx-auto w-4/5 xl:w-2/3 max-w-[1250px] py-20">
-					<h2 className="font-unna font-bold text-xl xl:text-[40px] text-primary mb-10">
+				<div className="mx-auto w-4/5 xl:w-2/3 max-w-[1250px] py-12 lg:py-20">
+					<h2 className="font-unna font-bold text-xl xl:text-[40px] text-primary mb-10 text-center">
 						(Some of) Our Capacities
 					</h2>
-					<p className="text-primary font-jose text-base xl:text-xl mb-16">
+					<p className="text-primary font-jose text-base xl:text-xl mb-10 lg:mb-16 text-center">
 						We provide 360 - project management services from
 						running your consortium to its communication, or we
 						draft your proposals to correspond to the language
 						in-between the lines of a RFP.
 					</p>
-					<div className="w-1/2 mx-auto flex flex-row justify-between items-center">
+					<div className="w-1/2 mx-auto flex flex-col gap-4 lg:flex-row justify-between items-center">
 						<Link
 							className="w-52 h-9 flex items-center justify-center bg-primary-light rounded-md shadow-md hover:shadow-lg text-white font-jose font-bold text-base"
 							href="/services"

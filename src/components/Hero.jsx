@@ -6,7 +6,7 @@ export default function Hero() {
 			id="hero"
 			className="bg-primary-light h-svh xl:h-screen -mt-16 xl:-mt-24 flex flex-col justify-end"
 		>
-			<div className="relative w-4/5 mx-auto aspect-[4000/2250] hidden md:block">
+			<div className="relative w-full md:w-3/4 lg:w-2/3 xl:w-1/2 my-auto lg:my-0 lg:mb-[10vh] mx-auto aspect-[4000/2250] block">
 				<Image
 					src={'/hero/hero.png'}
 					alt="hero illustration"
