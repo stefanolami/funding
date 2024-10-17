@@ -47,7 +47,9 @@ export default function ContactMapDesktop() {
 							</span>
 						</div>
 					) : (
-						<Loading />
+						<div className="w-full">
+							<Loading />
+						</div>
 					)}
 				</div>
 				<div className="relative w-full aspect-[2/1]">
