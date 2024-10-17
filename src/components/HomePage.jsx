@@ -15,7 +15,7 @@ export default function HomePage() {
 					sizes="(max-width: 640px) 70vw, 40vw"
 				/>
 			</div>
-			<p className="my-10 lg:my-12 font-jose mx-auto w-4/5 xl:w-2/3 max-w-[1250px] text-primary text-sm xl:text-xl text-center">
+			<p className="my-10 lg:my-12 font-jose mx-auto w-4/5 xl:w-2/3 max-w-[1250px] text-primary text-sm lg:text-xl text-center">
 				As big business or SME, as NGO or local administration you can
 				benefit from international, national, regional and local public
 				funding, financing and tenders. Time&Place Funding: Your point
@@ -27,7 +27,7 @@ export default function HomePage() {
 					<h2 className="font-unna font-bold text-2xl xl:text-[40px] text-primary mb-10 text-center">
 						Our Presence, Your Opportunities
 					</h2>
-					<p className="text-primary font-jose text-base xl:text-xl mb-10 lg:mb-16 text-center">
+					<p className="text-primary font-jose text-sm lg:text-xl mb-10 lg:mb-16 text-center">
 						With a global network of public funding, financing and
 						tenders professionals, we provide local access to
 						opportunities of all sizes for your competitive
@@ -55,7 +55,7 @@ export default function HomePage() {
 					<h2 className="font-unna font-bold text-2xl xl:text-[40px] text-primary mb-10 text-center">
 						(Some of) Our Capacities
 					</h2>
-					<p className="text-primary font-jose text-base xl:text-xl mb-10 lg:mb-16 text-center">
+					<p className="text-primary font-jose text-sm lg:text-xl mb-10 lg:mb-16 text-center">
 						We provide 360 - project management services from
 						running your consortium to its communication, or we
 						draft your proposals to correspond to the language
