@@ -7,7 +7,7 @@ export default function HomePage() {
 			id="home"
 			className="pb-16 xl:pb-32 w-full mx-auto"
 		>
-			<div className="mt-10 md:mt-16 relative mx-auto w-2/5 md:w-[20%] aspect-[353/150]">
+			<div className="mt-6 xl:mt-16 relative mx-auto w-[55%] xl:w-[25%] aspect-[550/160]">
 				<Image
 					src={'/logos/funding-logo-home.png'}
 					alt="Group Logo"
