@@ -23,328 +23,281 @@ export default function PrivacyPolicyPage({ params: { locale } }) {
 			</h1>
 			<div className="space-y-6 font-jose text-sm xl:text-base">
 				<p>
-					At Time&amp;Place Funding (&quot;Company&quot;
-					&quot;we&quot; &quot;our&quot; or &quot;us&quot;), we are
-					committed to protecting your privacy and complying with the
-					General Data Protection Regulation (EU Regulation 2016/679,
-					&quot;GDPR&quot;) and relevant Belgian data protection laws.
-					This Privacy Policy explains how we collect, use, disclose,
-					and safeguard your personal data when you visit our website
-					www.fundingontap.com (the &quot;Site&quot;) or engage with
-					our consulting services. Please read this policy carefully
-					to understand our practices regarding your personal data.
+					Time&Place Funding is committed to protecting your privacy
+					and ensuring that your personal data is handled in
+					compliance with applicable laws, including the General Data
+					Protection Regulation (EU) 2016/679 (GDPR). This Privacy
+					Policy explains how we collect, use, disclose, and protect
+					your personal information when you visit our website and
+					interact with our services.
 				</p>
 
 				<p>
 					<strong>1. Data Controller</strong>
 					<br />
-					For the purposes of GDPR and other relevant data protection
-					laws, Time&amp;Place Funding is the &quot;data
-					controller.&quot; This means we are responsible for deciding
-					how and why personal data is processed. Our registered
-					office is located at Rue de la Loi 81A, 1040 Brussels,
-					Belgium, and you can contact us via info@fundingontap.com
-					for any inquiries regarding this policy.
+					The data controller responsible for processing your personal
+					data is:
+				</p>
+				<p>
+					Time&Place Funding <br />
+					Rue de la Loi 81A, <br />
+					1040 Brussels, Belgium <br />
+					Email: info@fundingontap.com
 				</p>
 
 				<p>
-					<strong>2. Compliance with GDPR and Belgian Law</strong>
+					<strong>2. Data We Collect</strong>
 					<br />
-					We comply with the General Data Protection Regulation
-					(GDPR), which provides a legal framework for protecting
-					personal data and privacy in the European Union, as well as
-					with relevant Belgian privacy laws, including the Belgian
-					Law of 30 July 2018 on the protection of individuals with
-					regard to the processing of personal data.
+					We collect personal data that you provide directly to us or
+					that we collect automatically through your use of our
+					website. The types of personal data we collect include:
 				</p>
-
-				<p>
-					<strong>3. Information We Collect</strong>
-					<br />
-					We collect several types of information from and about users
-					of our Site and services, including:
-				</p>
-
-				<p>
-					<strong>a. Personal Data You Provide</strong>
-					<br />
-					- Contact Information: Name, email address, phone number,
-					and other personal information you provide when you contact
-					us or engage our services.
-					<br />
-					- Billing Information: Company name, address, and payment
-					details when you engage our services.
-					<br />- Communications: Information provided through
-					correspondence via email, phone, or through our Site.
-				</p>
-
-				<p>
-					<strong>b. Automatically Collected Information</strong>
-					<br />
-					When you access our Site, we may collect certain information
-					automatically:
-					<br />
-					- Device Information: IP address, browser type, operating
-					system.
-					<br />
-					- Usage Data: Information about your interaction with the
-					Site, such as pages viewed, links clicked, and duration of
-					visits.
-					<br />- Cookies: We use cookies to improve user experience
-					and for analytics. You can manage your cookie preferences
-					through your browser settings.
-				</p>
-
-				<p>
-					<strong>
-						4. Lawful Basis for Processing Personal Data
-					</strong>
-					<br />
-					We process personal data under GDPR Article 6(1) based on
-					one or more of the following legal grounds:
-				</p>
-
-				<p>
-					<strong>a. Contractual Necessity</strong>
-					<br />
-					To provide our consulting services and fulfill our
-					contractual obligations with you. This includes processing
-					personal data to manage client relationships, issue
-					invoices, and deliver consulting services.
-				</p>
-
-				<p>
-					<strong>b. Legitimate Interests</strong>
-					<br />
-					We process personal data based on our legitimate interests,
-					such as improving our services, ensuring the security of our
-					Site, and for marketing purposes, provided that these
-					interests are not overridden by your data protection rights.
-				</p>
-
-				<p>
-					<strong>c. Consent</strong>
-					<br />
-					We may seek your explicit consent for certain types of data
-					processing, particularly for sending marketing
-					communications. You can withdraw your consent at any time by
-					contacting us or using the opt-out feature in any marketing
-					emails.
-				</p>
-
-				<p>
-					<strong>d. Legal Obligation</strong>
-					<br />
-					We may process your personal data to comply with legal
-					obligations under Belgian law or EU law, such as tax
-					reporting and regulatory compliance.
-				</p>
-
-				<p>
-					<strong>5. Your Rights Under GDPR and Belgian Law</strong>
-					<br />
-					As a data subject under GDPR and Belgian law, you have the
-					following rights regarding your personal data:
-				</p>
-
 				<ul className="list-disc pl-5 space-y-2">
 					<li>
-						<strong>Right of Access</strong>: You have the right to
-						request access to the personal data we hold about you.
-						This includes information on how and why we process your
-						data.
+						Personal Identification Information: name, email
+						address, phone number, company name, and job title.
 					</li>
 					<li>
-						<strong>Right to Rectification</strong>: You have the
-						right to request corrections to any inaccurate or
-						incomplete personal data.
+						Usage Data: information about how you use our website,
+						including IP address, browser type and version, device
+						information, pages visited, time spent on pages, and
+						interactions with website features.
 					</li>
 					<li>
-						<strong>
-							Right to Erasure (&quot;Right to be Forgotten&quot;)
-						</strong>
-						: In certain circumstances, you may request the deletion
-						of your personal data. This applies if the data is no
-						longer needed for the purpose for which it was
-						collected.
+						Cookies and Tracking Technologies: data collected
+						through cookies and similar technologies, such as
+						browser cookies, pixels, and analytics tools. For more
+						information, please see our Cookie Policy (insert link).
+					</li>
+				</ul>
+
+				<p>
+					<strong>3. Legal Basis for Processing</strong>
+					<br />
+					We process your personal data based on the following legal
+					grounds:
+				</p>
+				<ul className="list-disc pl-5 space-y-2">
+					<li>
+						Consent: When you provide us with your explicit consent
+						to process your personal data (e.g., when subscribing to
+						our newsletter or accepting cookies).
 					</li>
 					<li>
-						<strong>Right to Restriction of Processing</strong>: You
-						may request that we restrict the processing of your
-						personal data under certain conditions, such as when you
-						contest the accuracy of the data or object to its
-						processing.
+						Contractual necessity: When processing your data is
+						necessary for the performance of a contract with you
+						(e.g., providing our services or responding to your
+						inquiries).
 					</li>
 					<li>
-						<strong>Right to Data Portability</strong>: You have the
-						right to receive your personal data in a structured,
-						commonly used, and machine-readable format and to
-						request that we transfer this data to another
-						controller, where technically feasible.
+						Legitimate interests: When processing is necessary for
+						our legitimate interests, provided that these interests
+						are not overridden by your rights (e.g., improving our
+						website, marketing communications).
 					</li>
 					<li>
-						<strong>Right to Object</strong>: You have the right to
-						object to the processing of your personal data based on
-						our legitimate interests or for direct marketing
-						purposes.
+						Legal obligations: When processing is necessary for
+						compliance with legal obligations (e.g., maintaining
+						financial records).
+					</li>
+				</ul>
+
+				<p>
+					<strong>4. How We Use Your Data</strong>
+					<br />
+					We use the personal data we collect for the following
+					purposes:
+				</p>
+				<ul className="list-disc pl-5 space-y-2">
+					<li>
+						To provide and manage our services, including responding
+						to inquiries and providing public funding advice.
 					</li>
 					<li>
-						<strong>Right to Withdraw Consent</strong>: If we rely
-						on your consent for processing, you have the right to
-						withdraw this consent at any time, without affecting the
-						lawfulness of processing carried out prior to the
+						To improve and personalize your experience on our
+						website.
+					</li>
+					<li>
+						To analyze website usage and improve the functionality
+						and content of our website.
+					</li>
+					<li>
+						To send you marketing communications and updates, where
+						you have consented to receive such communications.
+					</li>
+					<li>To comply with our legal obligations.</li>
+				</ul>
+
+				<p>
+					<strong>5. Data Retention</strong>
+					<br />
+					We will retain your personal data for as long as necessary
+					to fulfill the purposes for which it was collected, or as
+					required by law. When your data is no longer necessary, we
+					will securely delete or anonymize it.
+				</p>
+
+				<p>
+					<strong>6. Sharing Your Data</strong>
+					<br />
+					We may share your personal data with third parties under the
+					following circumstances:
+				</p>
+				<ul className="list-disc pl-5 space-y-2">
+					<li>
+						Service Providers: We may engage third-party companies
+						to perform functions on our behalf, such as website
+						hosting, data analysis, or email marketing. These
+						service providers are contractually bound to process
+						your personal data only in accordance with our
+						instructions and applicable data protection laws.
+					</li>
+					<li>
+						Legal Obligations: We may disclose your data where
+						required by law or to comply with legal proceedings,
+						court orders, or government regulations.
+					</li>
+					<li>
+						Business Transfers: In the event of a merger,
+						acquisition, or sale of assets, your personal data may
+						be transferred as part of the transaction.
+					</li>
+				</ul>
+				<p>
+					We do not sell or rent your personal data to third parties.
+				</p>
+
+				<p>
+					<strong>7. International Data Transfers</strong>
+					<br />
+					If we transfer your personal data outside the European
+					Economic Area (EEA), we will ensure that appropriate
+					safeguards are in place to protect your data, such as
+					entering into standard contractual clauses approved by the
+					European Commission or ensuring that the recipient is
+					subject to an adequacy decision by the European Commission.
+				</p>
+
+				<p>
+					<strong>8. Your Rights Under GDPR</strong>
+					<br />
+					As a data subject, you have the following rights concerning
+					your personal data:
+				</p>
+				<ul className="list-disc pl-5 space-y-2">
+					<li>
+						Right of access: You have the right to request access to
+						the personal data we hold about you.
+					</li>
+					<li>
+						Right to rectification: You have the right to request
+						correction of any inaccurate or incomplete data.
+					</li>
+					<li>
+						Right to erasure: You have the right to request the
+						deletion of your data in certain circumstances, also
+						known as the &quot;right to be forgotten.&quot;
+					</li>
+					<li>
+						Right to restrict processing: You have the right to
+						request a restriction on how we process your personal
+						data under specific conditions.
+					</li>
+					<li>
+						Right to data portability: You have the right to receive
+						your data in a structured, commonly used, and
+						machine-readable format and have the right to transmit
+						the data to another controller.
+					</li>
+					<li>
+						Right to object: You have the right to object to the
+						processing of your data based on legitimate interests,
+						including for direct marketing purposes.
+					</li>
+					<li>
+						Right to withdraw consent: If you have given consent to
+						the processing of your data, you have the right to
+						withdraw your consent at any time, without affecting the
+						lawfulness of processing based on consent before its
 						withdrawal.
 					</li>
-					<li>
-						<strong>Right to Lodge a Complaint</strong>: If you
-						believe that we are violating your privacy rights under
-						GDPR or Belgian law, you have the right to lodge a
-						complaint with a supervisory authority, such as the
-						Belgian Data Protection Authority.
-					</li>
 				</ul>
-
 				<p>
-					Belgian Data Protection Authority
-					<br />
-					Rue de la Presse 35, 1000 Brussels, Belgium
-					<br />
-					Tel: +32 (0)2 274 48 00
-					<br />
-					Website:{' '}
-					<a
-						href="https://www.gegevensbeschermingsautoriteit.be/"
-						className="underline"
-					>
-						https://www.gegevensbeschermingsautoriteit.be/
-					</a>
+					To exercise any of these rights, please contact us using the
+					contact details provided in this policy.
 				</p>
 
 				<p>
-					<strong>6. How We Use Your Data</strong>
-					<br />
-					We use your personal data for the following purposes:
-				</p>
-
-				<ul className="list-disc pl-5 space-y-2">
-					<li>
-						Providing Services: To deliver our consulting services
-						and manage our contractual relationships.
-					</li>
-					<li>
-						Communications: To respond to your inquiries, provide
-						updates on services, and manage client relationships.
-					</li>
-					<li>
-						Marketing: To send you promotional materials about our
-						services, with your consent.
-					</li>
-					<li>
-						Improvement of Services: To analyze usage patterns,
-						improve the functionality and security of our Site, and
-						develop new services.
-					</li>
-					<li>
-						Legal Compliance: To comply with legal obligations, such
-						as tax or regulatory reporting.
-					</li>
-				</ul>
-
-				<p>
-					<strong>7. Sharing Your Data</strong>
-					<br />
-					We do not sell or rent your personal data. We may share your
-					information with third parties in the following ways:
-				</p>
-
-				<ul className="list-disc pl-5 space-y-2">
-					<li>
-						<strong>Service Providers</strong>: We may share your
-						data with third-party service providers who assist us
-						with business operations, such as IT support, payment
-						processing, and marketing.
-					</li>
-					<li>
-						<strong>Legal and Regulatory Requirements</strong>: We
-						may disclose your personal data to comply with legal
-						obligations.
-					</li>
-					<li>
-						<strong>Business Transfers</strong>: In the event of a
-						merger, acquisition, or sale, your personal data may be
-						transferred to the new entity under the same level of
-						data protection as outlined in this Privacy Policy.
-					</li>
-				</ul>
-
-				<p>
-					<strong>8. International Data Transfers</strong>
-					<br />
-					Your personal data may be transferred to, and processed in,
-					countries outside the European Economic Area (EEA),
-					including countries that may not offer the same level of
-					data protection as the EEA. We ensure that such transfers
-					are conducted in compliance with GDPR requirements, using
-					Standard Contractual Clauses or other lawful mechanisms.
-				</p>
-
-				<p>
-					<strong>9. Data Security</strong>
+					<strong>9. Security of Your Data</strong>
 					<br />
 					We implement appropriate technical and organizational
-					measures to protect your personal data from unauthorized
-					access, use, or disclosure. These measures include
-					encryption, secure servers, and access controls. However, no
-					system is completely secure, and we cannot guarantee the
-					absolute security of your data.
+					measures to protect your personal data against unauthorized
+					access, loss, destruction, or alteration. However, please
+					note that no method of transmission over the internet or
+					electronic storage is 100% secure. While we strive to
+					protect your personal data, we cannot guarantee its absolute
+					security.
 				</p>
 
 				<p>
-					<strong>10. Data Retention</strong>
+					<strong>10. Cookies and Tracking Technologies</strong>
 					<br />
-					We will retain your personal data only for as long as
-					necessary to fulfill the purposes for which it was collected
-					or as required by law. The retention period may vary
-					depending on the nature of the data and legal obligations
-					(e.g., tax or regulatory requirements).
+					We use cookies and similar tracking technologies to collect
+					information about your browsing activities on our website.
+					This data is used to improve your user experience, analyze
+					traffic, and provide personalized content. For detailed
+					information on the cookies we use and how you can manage
+					your cookie preferences, please refer to our Cookie Policy
+					(insert link).
 				</p>
 
 				<p>
-					<strong>11. Children’s Privacy</strong>
+					<strong>11. Marketing Communications</strong>
 					<br />
-					Our services are not directed to individuals under 18, and
-					we do not knowingly collect personal data from minors. If we
-					learn that we have inadvertently collected personal data
-					from a child under 18, we will take appropriate steps to
-					delete the data as soon as possible.
+					If you have opted in to receive marketing communications
+					from us, we will use your personal data to send you
+					information about our services, events, and other relevant
+					updates. You may opt out of receiving these communications
+					at any time by clicking the &quot;unsubscribe&quot; link in
+					any email or contacting us directly.
 				</p>
 
 				<p>
-					<strong>12. Changes to This Privacy Policy</strong>
+					<strong>12. Third-Party Links</strong>
 					<br />
-					We may update this Privacy Policy to reflect changes in our
-					practices or legal obligations. Any changes will be posted
-					on this page with an updated &quot;Last Updated&quot; date.
-					We encourage you to review this policy periodically to stay
-					informed about how we are protecting your data.
+					Our website may contain links to external websites operated
+					by third parties. These websites have their own privacy
+					policies, and we are not responsible for their content or
+					practices. We recommend reviewing the privacy policies of
+					any third-party websites you visit.
 				</p>
 
 				<p>
-					<strong>13. Contact Information</strong>
+					<strong>13. Changes to This Privacy Policy</strong>
+					<br />
+					We may update this Privacy Policy from time to time to
+					reflect changes in our practices or legal requirements. Any
+					changes will be posted on this page, and the &quot;Effective
+					Date&quot; will be updated accordingly. We encourage you to
+					review this policy regularly to stay informed about how we
+					are protecting your personal data.
+				</p>
+
+				<p>
+					<strong>14. Contact Us</strong>
 					<br />
 					If you have any questions or concerns about this Privacy
-					Policy or wish to exercise any of your rights under GDPR or
-					Belgian law, please contact us at:
+					Policy, or if you wish to exercise your data protection
+					rights, please contact us at:
 				</p>
-
 				<p>
-					Time&amp;Place Funding
+					Time&Place Funding
 					<br />
-					Address: Rue de la Loi 81A, 1040 Brussels, Belgium
+					Rue de la Loi 81A,
+					<br />
+					1040 Brussels, Belgium
 					<br />
 					Email: info@fundingontap.com
-					<br />
-					+32 (0) 485 38 22 21
 				</p>
 			</div>
 		</div>

@@ -23,210 +23,243 @@ export default function CookieUsePage({ params: { locale } }) {
 			</h1>
 			<div className="space-y-6 font-jose text-sm xl:text-base">
 				<p>
-					Time&Place Funding (&quot;Company&quot; &quot;we&quot;
-					&quot;our&quot; or &quot;us&quot;) uses cookies and similar
-					technologies on our website www.fundingontap.com (the
-					&quot;Site&quot;). This Cookie Policy explains what cookies
-					are, how we use them, and your rights regarding their use.
-					By continuing to use our Site, you consent to the use of
-					cookies as described in this policy.
+					Time&Place Funding, headquartered in Brussels, Belgium, is
+					committed to ensuring the privacy and protection of your
+					personal data while visiting our website. This Cookie Policy
+					outlines how we use cookies and similar technologies, in
+					compliance with Regulation (EU) 2016/679 (General Data
+					Protection Regulation - GDPR) and Directive 2002/58/EC
+					(ePrivacy Directive).
 				</p>
 
 				<p>
 					<strong>1. What Are Cookies?</strong>
 					<br />
-					Cookies are small text files that are stored on your device
-					(computer, tablet, or mobile phone) when you visit a
-					website. Cookies allow a website to recognize your device,
-					store your preferences, and provide a more personalized
-					experience.
+					Cookies are small text files that are placed on your device
+					(e.g., computer, tablet, smartphone) when you visit a
+					website. Cookies help enhance your browsing experience by
+					remembering your preferences, providing analytical insights,
+					and enabling certain functionalities.
 				</p>
 
 				<p>
-					<strong>2. Types of Cookies We Use</strong>
+					<strong>2. Types of Cookies Used on This Website</strong>
 					<br />
-					We use the following types of cookies on our Site:
+					We use both “first-party” and “third-party cookies” on our
+					website. First-party cookies are set by “Time&Place
+					Funding”, while third-party cookies are set by external
+					service providers.
 				</p>
 
 				<p>
-					<strong>a. Essential Cookies</strong>
+					<strong>3. The categories of cookies used are:</strong>
+				</p>
+
+				<ol className="list-decimal pl-5 space-y-4">
+					<li>
+						<strong>Strictly Necessary Cookies</strong> <br />
+						These cookies are essential for the functioning of the
+						website. They enable core functionality such as security
+						features, access to secure areas, and network
+						management. These cookies do not require user consent.
+					</li>
+
+					<li>
+						<strong>Analytical/Performance Cookies*</strong> <br />
+						These cookies collect aggregated data on how visitors
+						use the website, such as pages visited and links
+						clicked. This data is anonymized and helps us optimize
+						the website’s performance. These cookies are deployed
+						only with your explicit consent.
+					</li>
+
+					<li>
+						<strong>Functional Cookies</strong> <br />
+						Functional cookies allow the website to remember your
+						settings and preferences, such as language choice or
+						region. They enhance your experience but are not
+						essential to the functioning of the website. Consent is
+						required for their activation.
+					</li>
+
+					<li>
+						<strong>Targeting/Advertising Cookies</strong> <br />
+						These cookies are used to deliver advertisements that
+						are more relevant to you and your interests. They may
+						also be used to limit the number of times you see an ad
+						and help measure the effectiveness of ad campaigns.
+						These cookies may track your browsing activity across
+						other websites and require your consent.
+					</li>
+				</ol>
+
+				<p>
+					<strong>4. Legal Basis for Using Cookies</strong>
 					<br />
-					These cookies are necessary for the website to function
-					properly and enable basic features such as page navigation,
-					security, and access to certain areas of the Site. Without
-					these cookies, some parts of the Site may not function
-					correctly.
-					<br />- Example: Authentication cookies that keep you logged
-					into your account.
+					Under Article 6(1)(a) of the GDPR, we will obtain your prior
+					consent before placing any cookies on your device, except
+					for those cookies that are strictly necessary for the
+					functioning of the website. You can accept or reject
+					non-essential cookies through the cookie banner that appears
+					when you first visit our website.
+				</p>
+				<p>
+					You may withdraw your consent at any time by changing your
+					cookie settings as described below.
 				</p>
 
 				<p>
-					<strong>b. Performance Cookies</strong>
+					<strong>5. Managing Your Cookie Preferences</strong>
 					<br />
-					Performance cookies collect information about how visitors
-					use the Site, such as which pages are visited most
-					frequently. This data helps us improve the Site’s
-					functionality and performance.
-					<br />- Example: Google Analytics cookies that track page
-					visits and user interactions anonymously.
-				</p>
-
-				<p>
-					<strong>c. Functional Cookies</strong>
-					<br />
-					These cookies enable the Site to remember choices you make,
-					such as language preferences, to provide a more personalized
-					experience.
-					<br />- Example: Cookies that remember your selected
-					language preference.
-				</p>
-
-				<p>
-					<strong>d. Targeting/Advertising Cookies</strong>
-					<br />
-					These cookies are used to deliver relevant advertisements to
-					users based on their browsing behavior on the Site. They may
-					also be used to limit the number of times you see an ad and
-					help measure the effectiveness of advertising campaigns.
-					<br />- Example: Cookies from advertising networks like
-					Google Ads to show targeted ads based on your browsing
-					history.
-				</p>
-
-				<p>
-					<strong>e. Third-Party Cookies</strong>
-					<br />
-					Some cookies may be placed by third-party service providers
-					we use to enhance your experience. For example, social media
-					platforms may set cookies to allow you to share content
-					directly on social media.
-					<br />- Example: Social media buttons (e.g., Facebook,
-					Instagram, Linkedin) that store user interactions with
-					content.
-				</p>
-
-				<p>
-					<strong>3. How We Use Cookies</strong>
-					<br />
-					We use cookies for the following purposes:
+					You have the right to control and manage the use of cookies
+					on our website. Upon your first visit, you will be presented
+					with a cookie consent banner, allowing you to:
 				</p>
 
 				<ul className="list-disc pl-5 space-y-2">
-					<li>
-						To provide essential functionality: Ensuring that the
-						Site operates properly and securely.
-					</li>
-					<li>
-						To improve user experience: Remembering user preferences
-						and providing a more tailored experience.
-					</li>
-					<li>
-						To analyze performance: Tracking user interactions and
-						Site performance to optimize our services.
-					</li>
-					<li>
-						To serve targeted ads: Delivering advertisements that
-						are relevant to your interests based on your browsing
-						history.
-					</li>
+					<li>Accept all cookies</li>
+					<li>Reject non-essential cookies</li>
+					<li>Customize your cookie settings</li>
 				</ul>
 
 				<p>
-					<strong>4. Your Choices Regarding Cookies</strong>
-					<br />
-					You can manage or disable cookies through your browser
-					settings. Each browser is different, but you can typically
-					modify your cookie settings under the
-					&quot;Preferences&quot; or &quot;Settings&quot; menu. Below
-					are links to instructions for managing cookies in popular
-					browsers:
+					You can also manage or delete cookies through your browser
+					settings at any time. Please note that disabling certain
+					cookies may impact the functionality of our website.
 				</p>
 
-				<ul className="list-disc pl-5 space-y-2">
+				<ul className="list-disc underline pl-5 space-y-2">
 					<li>
 						<a
 							href="https://support.google.com/chrome/answer/95647?hl=en"
-							className="underline"
+							target="_blank"
 						>
-							Google Chrome
+							Manage cookies in Google Chrome
 						</a>
 					</li>
 					<li>
 						<a
-							href="https://support.mozilla.org/en-US/kb/enable-and-disable-cookies-website-preferences"
-							className="underline"
+							href="https://support.mozilla.org/en-US/kb/enhanced-tracking-protection-firefox-desktop?redirectslug=enable-and-disable-cookies-website-preferences&redirectlocale=en-US"
+							target="_blank"
 						>
-							Mozilla Firefox
+							Manage cookies in Mozilla Firefox
 						</a>
 					</li>
 					<li>
 						<a
-							href="https://support.microsoft.com/en-us/help/4468242/microsoft-edge-browsing-data-and-privacy"
-							className="underline"
+							href="https://support.microsoft.com/en-us/windows/manage-cookies-in-microsoft-edge-view-allow-block-delete-and-use-168dab11-0753-043d-7c16-ede5947fc64d"
+							target="_blank"
 						>
-							Microsoft Edge
+							Manage cookies in Microsoft Edge
 						</a>
 					</li>
 					<li>
 						<a
-							href="https://support.apple.com/guide/safari/manage-cookies-and-website-data-sfri11471/mac"
-							className="underline"
+							href="https://support.apple.com/ro-ro/guide/safari/sfri11471/mac"
+							target="_blank"
 						>
-							Apple Safari
+							Manage cookies in Safari
 						</a>
 					</li>
 				</ul>
 
 				<p>
-					Please note that disabling certain cookies may affect the
-					functionality of our Site and limit your ability to use some
-					features.
+					<strong>6. Third-Party Cookies</strong>
+					<br />
+					Our website may contain cookies from third-party providers,
+					including, but not limited to, analytics services (such as
+					Google Analytics) and social media platforms (such as
+					LinkedIn, Facebook, Instagram, X, YouTube). These third
+					parties may collect data about your online activity across
+					different websites.
 				</p>
 
 				<p>
-					<strong>5. Consent to Use of Cookies</strong>
+					<strong>7. Data Collected via Cookies</strong>
 					<br />
-					When you visit our Site for the first time, you will see a
-					cookie consent banner asking you to accept or manage
-					cookies. By accepting cookies or continuing to use the Site
-					without changing your settings, you agree to our use of
-					cookies as described in this policy.
-					<br />
-					You may withdraw your consent at any time by changing your
-					cookie settings in your browser or revisiting the cookie
-					consent banner on our Site.
+					The information collected via cookies may include, but is
+					not limited to, the following:
+				</p>
+
+				<ul className="list-disc pl-5 space-y-2">
+					<li>IP address</li>
+					<li>Browser type and version</li>
+					<li>Device operating system</li>
+					<li>Pages visited on our website</li>
+					<li>Time spent on pages</li>
+					<li>Interaction with site features</li>
+				</ul>
+
+				<p>
+					This information is used solely to improve your user
+					experience, analyze site performance, and tailor our
+					services to your preferences. Personal data collected via
+					cookies will be processed in accordance with our Privacy
+					Policy (insert link).
 				</p>
 
 				<p>
-					<strong>6. Changes to the Cookie Policy</strong>
+					<strong>8. Data Retention</strong>
 					<br />
-					We may update this Cookie Policy from time to time to
-					reflect changes in our use of cookies or legal requirements.
-					Any changes will be posted on this page with an updated
-					&quot;Last Updated&quot; date. We recommend that you review
-					this policy periodically to stay informed about our cookie
-					practices.
+					Cookies will be stored on your device for a duration
+					appropriate to their purpose. Session cookies are
+					automatically deleted when you close your browser, while
+					persistent cookies remain on your device for a predetermined
+					period unless deleted manually.
 				</p>
 
 				<p>
-					<strong>7. Contact Us</strong>
+					<strong>9. Your Rights</strong>
+					<br />
+					As a data subject under the GDPR, you have the following
+					rights concerning your personal data:
+				</p>
+
+				<ul className="list-disc pl-5 space-y-2">
+					<li>
+						Right of access – You may request access to the data we
+						hold about you.
+					</li>
+					<li>
+						Right to rectification – You may request correction of
+						inaccurate data.
+					</li>
+					<li>
+						Right to erasure (&quot;right to be forgotten&quot;) –
+						You may request the deletion of your data under certain
+						conditions.
+					</li>
+					<li>
+						Right to restrict processing – You may request
+						restrictions on how we process your data.
+					</li>
+					<li>
+						Right to data portability – You may request the transfer
+						of your data to another service provider.
+					</li>
+					<li>
+						Right to object – You may object to the processing of
+						your data, including data processing via cookies.
+					</li>
+				</ul>
+
+				<p>
+					To exercise these rights or for any questions related to our
+					use of cookies, please contact us using the details below.
+				</p>
+
+				<p>
+					<strong>10. Contact Us</strong>
 					<br />
 					If you have any questions or concerns about this Cookie
-					Policy or our use of cookies, please contact us at:
-					<br />
-					Time&Place Funding
-					<br />
-					Email:{' '}
-					<a
-						href="mailto:info@fundingontap.com"
-						className="underline"
-					>
-						info@fundingontap.com
-					</a>
-					<br />
-					Address: Rue de la Loi 81A, 1040 Brussels
-					<br />
-					Belgium
+					Policy or how we use cookies, please contact us at:
+				</p>
+
+				<p>
+					Time&Place Funding <br />
+					Rue de la Loi 81A, <br />
+					1040 Brussels, Belgium <br />
+					Email: info@fundingontap.com
 				</p>
 			</div>
 		</div>
