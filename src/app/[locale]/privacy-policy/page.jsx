@@ -1,6 +1,7 @@
 import { useTranslations } from 'next-intl'
 import { unstable_setRequestLocale } from 'next-intl/server'
 import { getTranslations } from 'next-intl/server'
+import { Link } from '@/i18n/routing'
 
 export async function generateMetadata({ params: { locale } }) {
 	const t = await getTranslations({
@@ -67,7 +68,14 @@ export default function PrivacyPolicyPage({ params: { locale } }) {
 						Cookies and Tracking Technologies: data collected
 						through cookies and similar technologies, such as
 						browser cookies, pixels, and analytics tools. For more
-						information, please see our Cookie Policy (insert link).
+						information, please see our{' '}
+						<Link
+							href="/cookie-use"
+							className="underline"
+						>
+							Cookie Policy
+						</Link>
+						.
 					</li>
 				</ul>
 
@@ -247,8 +255,14 @@ export default function PrivacyPolicyPage({ params: { locale } }) {
 					This data is used to improve your user experience, analyze
 					traffic, and provide personalized content. For detailed
 					information on the cookies we use and how you can manage
-					your cookie preferences, please refer to our Cookie Policy
-					(insert link).
+					your cookie preferences, please refer to our{' '}
+					<Link
+						href="/cookie-use"
+						className="underline"
+					>
+						Cookie Policy
+					</Link>
+					.
 				</p>
 
 				<p>

@@ -1,6 +1,7 @@
 import { useTranslations } from 'next-intl'
 import { unstable_setRequestLocale } from 'next-intl/server'
 import { getTranslations } from 'next-intl/server'
+import { Link } from '@/i18n/routing'
 
 export async function generateMetadata({ params: { locale } }) {
 	const t = await getTranslations({
@@ -96,7 +97,13 @@ export default function TermsPage({ params: { locale } }) {
 				<p>
 					Your privacy is important to us. We are committed to
 					protecting your personal data and ensuring its lawful use in
-					accordance with the GDPR. Our Privacy Policy (insert link)
+					accordance with the GDPR. Our{' '}
+					<Link
+						href="/privacy-policy"
+						className="underline"
+					>
+						Privacy Policy
+					</Link>{' '}
 					outlines how we collect, process, and protect your personal
 					information. By using this website, you acknowledge that you
 					have read and understood our Privacy Policy.
@@ -105,10 +112,15 @@ export default function TermsPage({ params: { locale } }) {
 				<h2 className="text-lg font-semibold">6. Cookies</h2>
 				<p>
 					This website uses cookies to enhance user experience,
-					provide functionality, and collect analytical data. Our
-					Cookie Policy (insert link) explains the types of cookies we
-					use, how they work, and how you can manage your cookie
-					preferences.
+					provide functionality, and collect analytical data. Our{' '}
+					<Link
+						href="/cookie-use"
+						className="underline"
+					>
+						Cookie Policy
+					</Link>{' '}
+					explains the types of cookies we use, how they work, and how
+					you can manage your cookie preferences.
 				</p>
 
 				<h2 className="text-lg font-semibold">
