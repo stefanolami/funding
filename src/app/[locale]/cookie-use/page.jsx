@@ -1,6 +1,7 @@
 import { useTranslations } from 'next-intl'
 import { unstable_setRequestLocale } from 'next-intl/server'
 import { getTranslations } from 'next-intl/server'
+import { Link } from '@/i18n/routing'
 
 export async function generateMetadata({ params: { locale } }) {
 	const t = await getTranslations({
@@ -194,8 +195,14 @@ export default function CookieUsePage({ params: { locale } }) {
 					This information is used solely to improve your user
 					experience, analyze site performance, and tailor our
 					services to your preferences. Personal data collected via
-					cookies will be processed in accordance with our Privacy
-					Policy (insert link).
+					cookies will be processed in accordance with our{' '}
+					<Link
+						href="/privacy-policy"
+						className="underline"
+					>
+						Privacy Policy
+					</Link>
+					.
 				</p>
 
 				<p>
