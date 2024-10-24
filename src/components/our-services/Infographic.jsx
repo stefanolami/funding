@@ -9,23 +9,21 @@ export default function Infographic() {
 	}
 	return (
 		<div className="w-[1190.5px] mx-auto aspect-[16667/9376] my-20 relative">
-			{/* <Image
-				src="/infographic/placeholder.svg"
-				alt="Infographic"
-				fill
-			/> */}
 			<Image
 				src="/infographic/skeleton.svg"
 				alt="Infographic"
 				fill
 				className=""
 			/>
-			{/* <Image
-				src="/infographic/map.svg"
-				alt="Infographic"
-				fill
-			/> */}
-			{infographic.map((item) => (
+			{/* Clickable Area for Brainstorming */}
+			<div
+				className="absolute w-full h-full top-0 left-0 cursor-pointer bg-red-500 hover:bg-red-400"
+				style={{
+					clipPath: 'polygon(33% 62%, 37% 64%, 37.5% 88%, 24% 82%)',
+				}}
+				onClick={() => handleHover('Brainstorming')}
+			></div>
+			{/* {infographic.map((item) => (
 				<Image
 					style={{ top: item.top, left: item.left }}
 					key={item.id}
@@ -36,7 +34,7 @@ export default function Infographic() {
 					className={`absolute cursor-pointer`}
 					onMouseEnter={() => handleHover(item.id)}
 				/>
-			))}
+			))} */}
 		</div>
 	)
 }
