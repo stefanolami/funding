@@ -2,7 +2,6 @@
 
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
-import useMeasure from 'react-use-measure'
 import { FiChevronDown } from 'react-icons/fi'
 
 export default function ServiceExpandable({
@@ -10,13 +9,12 @@ export default function ServiceExpandable({
 	children,
 	defaultOpen = false,
 }) {
-	const [ref, { height }] = useMeasure()
 	const [open, setOpen] = useState(defaultOpen)
 
 	return (
 		<motion.div
 			animate={open ? 'open' : 'closed'}
-			className="border-b-[1px] border-b-slate-300"
+			className="border-b border-primary"
 		>
 			<button
 				onClick={() => setOpen((pv) => !pv)}
@@ -25,13 +23,13 @@ export default function ServiceExpandable({
 				<motion.span
 					variants={{
 						open: {
-							color: 'rgba(3, 6, 23, 0)',
+							color: '#009EC2',
 						},
 						closed: {
-							color: 'rgba(3, 6, 23, 1)',
+							color: '#004A6A',
 						},
 					}}
-					className="bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-left text-lg font-medium"
+					className="text-left text-2xl font-bold font-unna"
 				>
 					{title}
 				</motion.span>
@@ -39,11 +37,11 @@ export default function ServiceExpandable({
 					variants={{
 						open: {
 							rotate: '180deg',
-							color: 'rgb(124 58 237)',
+							color: '#009EC2',
 						},
 						closed: {
 							rotate: '0deg',
-							color: '#030617',
+							color: '#004A6A',
 						},
 					}}
 				>
@@ -58,7 +56,7 @@ export default function ServiceExpandable({
 				}}
 				className="overflow-hidden text-slate-600"
 			>
-				<div>{children}</div>
+				<div className="font-jose text-lg">{children}</div>
 			</motion.div>
 		</motion.div>
 	)
