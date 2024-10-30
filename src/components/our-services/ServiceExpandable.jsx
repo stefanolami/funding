@@ -14,7 +14,15 @@ export default function ServiceExpandable({
 	return (
 		<motion.div
 			animate={open ? 'open' : 'closed'}
-			className="border-b border-primary"
+			className="border rounded-xl px-4 mb-4 border-primary"
+			variants={{
+				open: {
+					backgroundColor: '#009EC2',
+				},
+				closed: {
+					backgroundColor: '#fff',
+				},
+			}}
 		>
 			<button
 				onClick={() => setOpen((pv) => !pv)}
@@ -23,7 +31,7 @@ export default function ServiceExpandable({
 				<motion.span
 					variants={{
 						open: {
-							color: '#009EC2',
+							color: '#fff',
 						},
 						closed: {
 							color: '#004A6A',
@@ -37,7 +45,7 @@ export default function ServiceExpandable({
 					variants={{
 						open: {
 							rotate: '180deg',
-							color: '#009EC2',
+							color: '#fff',
 						},
 						closed: {
 							rotate: '0deg',
@@ -56,7 +64,7 @@ export default function ServiceExpandable({
 				}}
 				className="overflow-hidden text-slate-600"
 			>
-				<div className="font-jose text-lg">{children}</div>
+				<div className="font-jose text-lg text-white">{children}</div>
 			</motion.div>
 		</motion.div>
 	)
