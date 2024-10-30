@@ -1,7 +1,4 @@
-const team = {
-	empty: {
-		name: 'empty',
-	},
+export const managingTeam = {
 	glenn: {
 		name: 'Glenn Cezanne',
 		path: 'glenn-cezanne',
@@ -162,9 +159,9 @@ const team = {
 			},
 		],
 	},
-	empty2: {
-		name: 'empty',
-	},
+}
+
+export const team = {
 	shumaila: {
 		name: 'Shumaila Afzal',
 		path: 'shumaila-afzal',
@@ -261,7 +258,7 @@ const team = {
 			},
 		],
 	},
-	matheus: {
+	/* matheus: {
 		name: 'Matheus Carvalho',
 		path: 'matheus-carvalho',
 		img: '/team/matheus.png',
@@ -290,7 +287,7 @@ const team = {
 				],
 			},
 		],
-	},
+	}, */
 	guilherme: {
 		name: 'Guilherme Crispim Ferreira',
 		path: 'guilherme-ferreira',
@@ -468,5 +465,3 @@ const team = {
 		],
 	},
 }
-
-export default team
