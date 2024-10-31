@@ -4,6 +4,7 @@ import { motion, MotionConfig } from 'framer-motion'
 import { useState, useEffect } from 'react'
 import { Link } from '@/i18n/routing'
 import MobileLocaleSwitcher from './MobileLocaleSwitcher'
+import { FiChevronDown } from 'react-icons/fi'
 
 export default function MobileNav({ messages }) {
 	const [active, setActive] = useState(false)
@@ -20,7 +21,7 @@ export default function MobileNav({ messages }) {
 
 	return (
 		<div className="md:hidden flex flex-row font-unna text-lg">
-			<MobileLocaleSwitcher />
+			{/* <MobileLocaleSwitcher /> */}
 			<MotionConfig
 				transition={{
 					duration: 0.4,
@@ -110,7 +111,7 @@ export default function MobileNav({ messages }) {
 						}}
 					>
 						<nav className="flex flex-col justify-start gap-4 items-center text-white mt-24">
-							<Link
+							{/* <Link
 								onClick={() => setActive(false)}
 								href="/poe"
 							>
@@ -121,10 +122,32 @@ export default function MobileNav({ messages }) {
 								href="/your-access"
 							>
 								{messages.yourAccess}
-							</Link>
-							<span onClick={() => setWhoWeAre((pv) => !pv)}>
-								{messages.whoWeAre}
-							</span>
+							</Link> */}
+							<div className="flex flex-row justify-start items-center gap-3">
+								<span
+									className="text-center relative block"
+									onClick={() => setWhoWeAre((pv) => !pv)}
+								>
+									{messages.whoWeAre}
+									<motion.span
+										transition={{
+											duration: 0.2,
+										}}
+										className="absolute left-full ml-2 mt-1"
+										animate={whoWeAre ? 'open' : 'closed'}
+										variants={{
+											open: {
+												rotate: '180deg',
+											},
+											closed: {
+												rotate: '0deg',
+											},
+										}}
+									>
+										<FiChevronDown className="text-xl text-white" />
+									</motion.span>
+								</span>
+							</div>
 							{whoWeAre && (
 								<div className="flex flex-col justify-center gap-2 items-center text-sm">
 									<Link
@@ -148,8 +171,30 @@ export default function MobileNav({ messages }) {
 							>
 								{messages.services}
 							</Link>
-							<div onClick={() => setWhyUs((pv) => !pv)}>
-								{messages.whyUs}
+							<div className="flex flex-row justify-start items-center gap-3">
+								<span
+									className="text-center relative block"
+									onClick={() => setWhyUs((pv) => !pv)}
+								>
+									{messages.whyUs}
+									<motion.span
+										transition={{
+											duration: 0.2,
+										}}
+										className="absolute left-full ml-2 mt-1"
+										animate={whyUs ? 'open' : 'closed'}
+										variants={{
+											open: {
+												rotate: '180deg',
+											},
+											closed: {
+												rotate: '0deg',
+											},
+										}}
+									>
+										<FiChevronDown className="text-xl text-white" />
+									</motion.span>
+								</span>
 							</div>
 							{whyUs && (
 								<div className="flex flex-col justify-center gap-2 items-center text-sm">
@@ -159,7 +204,7 @@ export default function MobileNav({ messages }) {
 									>
 										{messages.overview}
 									</Link>
-									<Link
+									{/* <Link
 										onClick={() => setActive(false)}
 										href="/our-team"
 									>
@@ -182,7 +227,7 @@ export default function MobileNav({ messages }) {
 										href="/our-team"
 									>
 										{messages.publications}
-									</Link>
+									</Link> */}
 									<Link
 										onClick={() => setActive(false)}
 										href="/our-team"

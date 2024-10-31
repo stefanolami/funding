@@ -9,11 +9,12 @@ export default function DesktopNav({ messages, inverted }) {
 			id="desktop-nav"
 			className="hidden md:flex flex-row justify-between items-center gap-12 h-full font-unna font-bold"
 		>
+			{/* CHANGE TO GRID-COLS-6 */}
 			<nav
 				id="desktop-nav"
-				className="grid grid-cols-6 text-center uppercase h-full *:px-4 text-base"
+				className="grid grid-cols-4 text-center uppercase h-full *:px-4 text-base"
 			>
-				<Link
+				{/* <Link
 					className={
 						inverted
 							? 'hover:text-white hover:bg-primary'
@@ -32,7 +33,7 @@ export default function DesktopNav({ messages, inverted }) {
 					href="/your-access"
 				>
 					{messages.yourAccess}
-				</Link>
+				</Link> */}
 				<div className="group relative flex items-center justify-center cursor-pointer">
 					<span>{messages.whoWeAre}</span>
 					<div className="hidden group-hover:flex flex-col items-center justify-center gap-1 w-full absolute top-full">
@@ -75,7 +76,7 @@ export default function DesktopNav({ messages, inverted }) {
 						>
 							{messages.overview}
 						</Link>
-						<Link
+						{/* <Link
 							href="/about-us"
 							className={`desktop-nav-li w-full h-full bg-primary py-3 hover:scale-110 hover:shadow-xl mt-1 ${
 								inverted ? 'text-white' : ''
@@ -106,7 +107,7 @@ export default function DesktopNav({ messages, inverted }) {
 							}`}
 						>
 							{messages.publications}
-						</Link>
+						</Link> */}
 						<Link
 							href="/about-us"
 							className={`desktop-nav-li w-full h-full bg-primary py-3 hover:scale-110 hover:shadow-xl mt-1 ${
@@ -128,7 +129,7 @@ export default function DesktopNav({ messages, inverted }) {
 					{messages.contact}
 				</Link>
 			</nav>
-			<DesktopLocaleSwitcher />
+			{/* <DesktopLocaleSwitcher /> */}
 		</div>
 	)
 }
