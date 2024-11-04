@@ -4,7 +4,7 @@ export const managingTeam = {
 		path: 'glenn-cezanne',
 		img: '/team/glenn.png',
 		imgName: 'Glenn Cezanne',
-		imgTitle: 'Founder & CEO',
+		imgTitle: 'Co-Founder & Strategic Adviser',
 		titles: [
 			'Founder & CEO – Time&Place Group',
 			'Founder & Managing Director – Time&Place Consulting',
@@ -79,83 +79,70 @@ export const managingTeam = {
 			},
 		],
 	},
-	corina: {
-		name: 'Corina Cătălina Gheorgheza',
-		path: 'corina-gheorgheza',
-		img: '/team/corina.png',
-		imgName: 'Corina Gheorgheza',
-		imgTitle: 'CPO',
-		titles: [
-			'CPO – Time&Place Group',
-			'Programme Developer – Time&Place Institute',
-		],
+	kjeld: {
+		name: 'Kjeld B. Olesen',
+		path: 'kjeld-olesen',
+		img: '/team/kjeld.png',
+		imgName: 'Kjeld B. Olesen',
+		imgTitle: 'Co-Founder & Project Manager',
+		titles: ['Co-Founder & Project Manager - Time&Place Funding'],
 		contact: {
-			email: 'corina@groupontap.com',
+			email: 'kjeld@fundingontap.com',
 		},
 		introduction: [
-			'With a career focused on creative industries, Corina Cătălina Gheorgheza started more than 16 years ago in the beauty industry, where she worked as a Brand Manager for Romania and the Balkans, spearheading an exclusive product line at Sephora Romania. Her portfolio includes collaborations with entities such as UNTOLD Group, a company that organizes the largest music festivals in Eastern Europe and Middle East, as well as Remember Enescu Foundation, Edurights4Girls – Equal Access to Education, and in the cinematic domain as event coordinator for the movie “Beside Me” - directed by Tedy Necula.',
-			'Corina stands as a co-founder of a pioneering initiative in Behavioral Analysis and Criminal Profiling, in collaboration with the Romanian Behavioral Analysis Unit under the umbrella of the General Inspectorate of the Romanian Police.',
-			'Certified as a trainer, project manager, behavioral analyst, criminal & psychological profiler, and clinical psychologist, she offers a blend of expertise to her clients. ',
-			"Currently serving as the Chief People Officer for Time&Place Group, Corina is responsible for overseeing the organisation's human resources and talent functions, providing a bridge between the workforce and executive decision-making. She is also involved in project management, controlling, and profiling. Additionally, Corina is also Programme Developer of Time&Place Institute, where she leads the development of course curriculums and manages the growth of this key pillar within the Group.",
+			'Having 30 years of experience focusing on research, development and innovation, Kjeld understands the ins and outs of the funding and finance landscape across Europe aimed at supporting private industry, academic or public organisations.',
 		],
-		introductionEndorsement: {
-			content: [
-				'“Mrs. Corina Gheorgheza stood out through her intelligence, sustained work capacity and strong motivation in settling rigorousness, methodical approach of science applied in uncertain forensic situations, calm handling of any issues and changes occurring in legal cases.',
-				'During the scientific activities in which she participated, I noticed that her professionalism and interest have contributed to the fast settlement of forensic psychology.”',
-			],
-			name: 'Phd. Psih. Chief Comm. Dorin Dumitran',
-			title: 'General Inspectorate of Romanian Police, Criminal Investigation Directorate – Behavioral Analysis Unit ',
-		},
 		paragraphs: [
 			{
-				title: 'Chief People Officer',
+				title: 'Business Development',
 				content: [
-					'As the Chief People Officer of Time&Place Group, Corina is responsible for leading the organization’s people strategy, ensuring that the company attracts, develops, and retains top talent. She focuses on creating a supportive and inclusive workplace culture that fosters employee management and well-being. Corina works closely with leadership to align human resources initiatives with the company’s strategic objectives, managing areas such as recruitment, training and development, performance management, and employee relations.',
-				],
-				endorsement: {
-					content: [
-						"“Corina brought a wealth of expertise to the table, demonstrating a deep understanding of effective communication strategies. She skillfully crafted messages that resonated with our target audience, ensuring our project's objectives were effectively conveyed and understood.",
-						"Her proactive approach and attention to detail were invaluable assets to our team. Corina took the initiative to identify opportunities for improvement and implement innovative communication solutions, which significantly enhanced our project's visibility and impact. ",
-						'It was a pleasure having Corina in our team. She brings enthusiasm, creativity, and a collaborative spirit to every task, inspiring those around her to strive for excellence.” ',
-					],
-					name: 'Alexandra Bălșeanu',
-					title: 'President, GO-AHEAD Association',
-				},
-			},
-			{
-				title: 'Business Controller',
-				content: [
-					'As a Business Controller, Corina is developing and maintaining legal and financial systems. Her approach involves planning, directing, and controlling legal and financial operations, while providing financial analysis.',
+					'Kjeld embarked on his career in the Danish private sector, initially serving as an economist and TQM (Total Quality Management) responsible. He later transitioned into the role of "Business Development Manager."',
+					'In these roles, he managed projects with support from European, Nordic and national entities, working closely with relevant authorities.',
+					'His varied portfolio of projects includes establishing Business-to-Business Joint-ventures in South Africa, advising members of The Danish Electronics and IT Manufacturers Association on outsourcing opportunities after thorough visits to companies in the Baltic states, and overseeing product and technology-focused Research, Development, and Innovation (R&D&I) initiatives.',
 				],
 			},
 			{
-				title: 'Business Profiler',
+				title: 'EU Project Management',
 				content: [
-					"As a Business Profiler, Corina leverages her expertise as a forensic and psychological profiler and behavioral analyst to create detailed profiles of potential clients and collaborators. She applies her deep understanding of human behavior, motivations, and thought processes to analyze the key players within these organizations. Her analysis ensures that any collaboration aligns with the company's strategic goals and values, while also mitigating potential risks.",
+					'His experience lies in overseeing projects through their entire lifecycle, from their initial conception to their ultimate completion.',
+					"In this capacity, he has been responsible for maintaining the project's objectives throughout the entire process, including writing proposals, negotiating contracts with supporting authorities, managing project execution, and overseeing final evaluations.",
+					'During his employment at Aalborg University, he served as the full-time Project Manager for "MAGNET" and "MAGNET Beyond." Notably, these projects, at the time, were the largest EU projects in Denmark. Engaging 42 partners from Asia, North America, and Europe, with a substantial budget of approximately EUR 34 million, and having secured EUR 20.3 million in EU funding.',
 				],
 				endorsement: {
 					content: [
-						'“For the collaboration with me in the campaign for the release of my first feature film, Beside Me, Corina meant more than the extra mile, as both strategic and executive involvement. She worked very hard, and the effect was seen, the film was searched by tens of thousands of people. She is creative and goes deep into projects that bear her stamp.”',
+						"“I have on several occasions made use of Kjeld's expertise related to EU project management. I know Kjeld as highly reliable and knowledgeable.”",
 					],
-					name: 'Tedy Necula',
-					title: 'Inspirational Film & Ads Director / Producer, Necula Agency',
+					name: 'Troels Jacob Hegland',
+					title: 'Associate Professor at Centre for Blue Governance (CBG), Aalborg University',
 				},
 			},
 			{
-				title: 'Publications & Training & Languages',
+				title: 'Interest Representation',
 				content: [
-					'Corina is writing monthly psychology-focused articles and has conducted training sessions for Sephora employees in Romania and Bulgaria. Additionally, she has facilitated workshops for Boots stores employees in London under the Boots Fashion Brands Workshops initiative.',
-					'Corina speaks Romanian, English, Spanish whilst improving her French.',
+					'His last position before deciding to build Time&Place Funding together with Glenn Cezanne was representative of the Region of North Denmark in Brussels (North Denmark EU-Office).',
+					'In this role, he oversaw the identification of relevant funding opportunities for stakeholders in North Denmark and worked to secure further EU funding for the region. Additionally, he provided support to regional politicians in their engagement with EU legislation, including participation in institutional bodies; e.g. in the Committee of Regions (CoR).',
 				],
-				endorsement: {
-					content: [
-						'“Mrs. Corina Cătălina Gheorgheza has been collaborating with the Remember Enescu Cultural Foundation for over five years, handling the communication and promotion of our artistic events on social media platforms.',
-						'Throughout this collaboration, I have had the pleasure of witnessing her high level of professionalism, promptness, dedication, and deep involvement.',
-						'I wholeheartedly recommend Mrs. Corina Cătălina Gheorgheza for any collaboration or project.”',
-					],
-					name: 'Mihaela Tomescu',
-					title: 'President, Remember Enescu Cultural Foundation',
-				},
+			},
+			{
+				title: 'Lecturing and Training',
+				content: [
+					'With eight years of part-time lecturing experience at Aarhus BSS (School of Business and Social Sciences, Aarhus University), he is an experienced educator.',
+					'His workshops and seminars integrate extensive expertise in funding and finance with theoretical lectures on Financing & Investment models, Budgeting & Cost Structures, and Marketing Management topics such as e-commerce, B2B marketing, Value Chain Management, Global Marketing, and International Market Analysis.',
+				],
+			},
+			{
+				title: 'Sectoral Expertise',
+				content: [
+					'There is an extensive list of sectors where he has written successful proposals for funding and financing which include:',
+				],
+				list: [
+					'Food processing (quality control and optimization of use, treatment and preparation to best possible quality and nutrition);',
+					'Agriculture (sustainability and environmentally friendly primary production. e.g. Mechanical treatment in vegetable production, use of waste products, vegetation protection around water resources, etc.);',
+					'Health (including public health, healthcare, healthy independent living and active healthy ageing);',
+					'Environment, waste management, wood processing machinery industry, textile design and production, metal processing, logistic systems, nanomaterials;',
+					'Energy (renewable energy and energy efficiency);',
+					'ICT (mobile and wireless communication, computer science, robotics, intelligent transport systems, health technology);',
+				],
 			},
 		],
 	},
@@ -318,6 +305,86 @@ export const team = {
 			},
 		],
 	},
+	corina: {
+		name: 'Corina Cătălina Gheorgheza',
+		path: 'corina-gheorgheza',
+		img: '/team/corina.png',
+		imgName: 'Corina Gheorgheza',
+		imgTitle: 'CPO',
+		titles: [
+			'CPO – Time&Place Group',
+			'Programme Developer – Time&Place Institute',
+		],
+		contact: {
+			email: 'corina@groupontap.com',
+		},
+		introduction: [
+			'With a career focused on creative industries, Corina Cătălina Gheorgheza started more than 16 years ago in the beauty industry, where she worked as a Brand Manager for Romania and the Balkans, spearheading an exclusive product line at Sephora Romania. Her portfolio includes collaborations with entities such as UNTOLD Group, a company that organizes the largest music festivals in Eastern Europe and Middle East, as well as Remember Enescu Foundation, Edurights4Girls – Equal Access to Education, and in the cinematic domain as event coordinator for the movie “Beside Me” - directed by Tedy Necula.',
+			'Corina stands as a co-founder of a pioneering initiative in Behavioral Analysis and Criminal Profiling, in collaboration with the Romanian Behavioral Analysis Unit under the umbrella of the General Inspectorate of the Romanian Police.',
+			'Certified as a trainer, project manager, behavioral analyst, criminal & psychological profiler, and clinical psychologist, she offers a blend of expertise to her clients. ',
+			"Currently serving as the Chief People Officer for Time&Place Group, Corina is responsible for overseeing the organisation's human resources and talent functions, providing a bridge between the workforce and executive decision-making. She is also involved in project management, controlling, and profiling. Additionally, Corina is also Programme Developer of Time&Place Institute, where she leads the development of course curriculums and manages the growth of this key pillar within the Group.",
+		],
+		introductionEndorsement: {
+			content: [
+				'“Mrs. Corina Gheorgheza stood out through her intelligence, sustained work capacity and strong motivation in settling rigorousness, methodical approach of science applied in uncertain forensic situations, calm handling of any issues and changes occurring in legal cases.',
+				'During the scientific activities in which she participated, I noticed that her professionalism and interest have contributed to the fast settlement of forensic psychology.”',
+			],
+			name: 'Phd. Psih. Chief Comm. Dorin Dumitran',
+			title: 'General Inspectorate of Romanian Police, Criminal Investigation Directorate – Behavioral Analysis Unit ',
+		},
+		paragraphs: [
+			{
+				title: 'Chief People Officer',
+				content: [
+					'As the Chief People Officer of Time&Place Group, Corina is responsible for leading the organization’s people strategy, ensuring that the company attracts, develops, and retains top talent. She focuses on creating a supportive and inclusive workplace culture that fosters employee management and well-being. Corina works closely with leadership to align human resources initiatives with the company’s strategic objectives, managing areas such as recruitment, training and development, performance management, and employee relations.',
+				],
+				endorsement: {
+					content: [
+						"“Corina brought a wealth of expertise to the table, demonstrating a deep understanding of effective communication strategies. She skillfully crafted messages that resonated with our target audience, ensuring our project's objectives were effectively conveyed and understood.",
+						"Her proactive approach and attention to detail were invaluable assets to our team. Corina took the initiative to identify opportunities for improvement and implement innovative communication solutions, which significantly enhanced our project's visibility and impact. ",
+						'It was a pleasure having Corina in our team. She brings enthusiasm, creativity, and a collaborative spirit to every task, inspiring those around her to strive for excellence.” ',
+					],
+					name: 'Alexandra Bălșeanu',
+					title: 'President, GO-AHEAD Association',
+				},
+			},
+			{
+				title: 'Business Controller',
+				content: [
+					'As a Business Controller, Corina is developing and maintaining legal and financial systems. Her approach involves planning, directing, and controlling legal and financial operations, while providing financial analysis.',
+				],
+			},
+			{
+				title: 'Business Profiler',
+				content: [
+					"As a Business Profiler, Corina leverages her expertise as a forensic and psychological profiler and behavioral analyst to create detailed profiles of potential clients and collaborators. She applies her deep understanding of human behavior, motivations, and thought processes to analyze the key players within these organizations. Her analysis ensures that any collaboration aligns with the company's strategic goals and values, while also mitigating potential risks.",
+				],
+				endorsement: {
+					content: [
+						'“For the collaboration with me in the campaign for the release of my first feature film, Beside Me, Corina meant more than the extra mile, as both strategic and executive involvement. She worked very hard, and the effect was seen, the film was searched by tens of thousands of people. She is creative and goes deep into projects that bear her stamp.”',
+					],
+					name: 'Tedy Necula',
+					title: 'Inspirational Film & Ads Director / Producer, Necula Agency',
+				},
+			},
+			{
+				title: 'Publications & Training & Languages',
+				content: [
+					'Corina is writing monthly psychology-focused articles and has conducted training sessions for Sephora employees in Romania and Bulgaria. Additionally, she has facilitated workshops for Boots stores employees in London under the Boots Fashion Brands Workshops initiative.',
+					'Corina speaks Romanian, English, Spanish whilst improving her French.',
+				],
+				endorsement: {
+					content: [
+						'“Mrs. Corina Cătălina Gheorgheza has been collaborating with the Remember Enescu Cultural Foundation for over five years, handling the communication and promotion of our artistic events on social media platforms.',
+						'Throughout this collaboration, I have had the pleasure of witnessing her high level of professionalism, promptness, dedication, and deep involvement.',
+						'I wholeheartedly recommend Mrs. Corina Cătălina Gheorgheza for any collaboration or project.”',
+					],
+					name: 'Mihaela Tomescu',
+					title: 'President, Remember Enescu Cultural Foundation',
+				},
+			},
+		],
+	},
 	stefano: {
 		name: 'Stefano Lami',
 		path: 'stefano-lami',
@@ -351,73 +418,6 @@ export const team = {
 				content: [
 					'Since joining Time&Place Group in February 2023, Stefano has become an integral part of the team, contributing to the development and maintenance of our digital presence. He is a quick learner, always eager to expand his knowledge and tackle new challenges.',
 					'Stefano speaks English, Italian, German, and Romanian.',
-				],
-			},
-		],
-	},
-	kjeld: {
-		name: 'Kjeld B. Olesen',
-		path: 'kjeld-olesen',
-		img: '/team/kjeld.png',
-		imgName: 'Kjeld B. Olesen',
-		imgTitle: 'Project Manager',
-		titles: ['Co-Founder & Project Manager - Time&Place Funding'],
-		contact: {
-			email: 'kjeld@fundingontap.com',
-		},
-		introduction: [
-			'Having 30 years of experience focusing on research, development and innovation, Kjeld understands the ins and outs of the funding and finance landscape across Europe aimed at supporting private industry, academic or public organisations.',
-		],
-		paragraphs: [
-			{
-				title: 'Business Development',
-				content: [
-					'Kjeld embarked on his career in the Danish private sector, initially serving as an economist and TQM (Total Quality Management) responsible. He later transitioned into the role of "Business Development Manager."',
-					'In these roles, he managed projects with support from European, Nordic and national entities, working closely with relevant authorities.',
-					'His varied portfolio of projects includes establishing Business-to-Business Joint-ventures in South Africa, advising members of The Danish Electronics and IT Manufacturers Association on outsourcing opportunities after thorough visits to companies in the Baltic states, and overseeing product and technology-focused Research, Development, and Innovation (R&D&I) initiatives.',
-				],
-			},
-			{
-				title: 'EU Project Management',
-				content: [
-					'His experience lies in overseeing projects through their entire lifecycle, from their initial conception to their ultimate completion.',
-					"In this capacity, he has been responsible for maintaining the project's objectives throughout the entire process, including writing proposals, negotiating contracts with supporting authorities, managing project execution, and overseeing final evaluations.",
-					'During his employment at Aalborg University, he served as the full-time Project Manager for "MAGNET" and "MAGNET Beyond." Notably, these projects, at the time, were the largest EU projects in Denmark. Engaging 42 partners from Asia, North America, and Europe, with a substantial budget of approximately EUR 34 million, and having secured EUR 20.3 million in EU funding.',
-				],
-				endorsement: {
-					content: [
-						"“I have on several occasions made use of Kjeld's expertise related to EU project management. I know Kjeld as highly reliable and knowledgeable.”",
-					],
-					name: 'Troels Jacob Hegland',
-					title: 'Associate Professor at Centre for Blue Governance (CBG), Aalborg University',
-				},
-			},
-			{
-				title: 'Interest Representation',
-				content: [
-					'His last position before deciding to build Time&Place Funding together with Glenn Cezanne was representative of the Region of North Denmark in Brussels (North Denmark EU-Office).',
-					'In this role, he oversaw the identification of relevant funding opportunities for stakeholders in North Denmark and worked to secure further EU funding for the region. Additionally, he provided support to regional politicians in their engagement with EU legislation, including participation in institutional bodies; e.g. in the Committee of Regions (CoR).',
-				],
-			},
-			{
-				title: 'Lecturing and Training',
-				content: [
-					'With eight years of part-time lecturing experience at Aarhus BSS (School of Business and Social Sciences, Aarhus University), he is an experienced educator.',
-					'His workshops and seminars integrate extensive expertise in funding and finance with theoretical lectures on Financing & Investment models, Budgeting & Cost Structures, and Marketing Management topics such as e-commerce, B2B marketing, Value Chain Management, Global Marketing, and International Market Analysis.',
-				],
-			},
-			{
-				title: 'Sectoral Expertise',
-				content: [
-					'There is an extensive list of sectors where he has written successful proposals for funding and financing which include:',
-				],
-				list: [
-					'Food processing (quality control and optimization of use, treatment and preparation to best possible quality and nutrition);',
-					'Agriculture (sustainability and environmentally friendly primary production. e.g. Mechanical treatment in vegetable production, use of waste products, vegetation protection around water resources, etc.);',
-					'Health (including public health, healthcare, healthy independent living and active healthy ageing);',
-					'Environment, waste management, wood processing machinery industry, textile design and production, metal processing, logistic systems, nanomaterials;',
-					'Energy (renewable energy and energy efficiency);',
-					'ICT (mobile and wireless communication, computer science, robotics, intelligent transport systems, health technology);',
 				],
 			},
 		],

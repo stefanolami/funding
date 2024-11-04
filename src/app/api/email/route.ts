@@ -7,7 +7,7 @@ export async function POST(request: NextRequest) {
 
 	const transport = nodemailer.createTransport({
 		/* service: 'Zoho', */
-		host: 'smtp.zoho.com',
+		host: 'smtppro.zoho.eu',
 		port: 465,
 		secure: true,
 		authMethod: 'LOGIN',
@@ -21,7 +21,7 @@ export async function POST(request: NextRequest) {
 		from: process.env.MY_EMAIL,
 		to: process.env.MY_EMAIL,
 		// cc: email, (uncomment this line if you want to send a copy to the sender)
-		subject: `Group Contact Form - ${subject} - from ${name} (${email})`,
+		subject: `Funding Contact Form - ${subject} - from ${name} (${email})`,
 		text: `Message from ${name} (${email}) with subject - ${subject}:\n\n${message}`,
 	}
 

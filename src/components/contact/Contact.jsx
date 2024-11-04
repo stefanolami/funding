@@ -44,7 +44,7 @@ export default function Contact() {
 								</div>
 								<div>
 									<span className="block font-jose text-xs xl:text-lg font-primary">
-										info@groupontap.com
+										info@fundingontap.com
 									</span>
 								</div>
 							</div>
