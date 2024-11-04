@@ -1,5 +1,5 @@
 import Infographic from './Infographic'
-import ServiceExpandable from './ServiceExpandable'
+import ServiceExpandable2 from './ServiceExpandable2'
 
 export default function OurServices() {
 	return (
@@ -8,34 +8,34 @@ export default function OurServices() {
 				Our Services
 			</h3>
 			<div className="mx-auto max-w-3xl">
-				<ServiceExpandable title="Service 1">
+				<ServiceExpandable2 title="Service 1">
 					<p>
 						Lorem ipsum dolor sit amet consectetur adipisicing elit.
 						Doloremque laboriosam neque reprehenderit saepe eius
 						dolorum vel consequuntur perspiciatis ad vero.
 					</p>
-				</ServiceExpandable>
-				<ServiceExpandable title="Service 2">
+				</ServiceExpandable2>
+				<ServiceExpandable2 title="Service 2">
 					<p>
 						Lorem ipsum dolor sit amet consectetur adipisicing elit.
 						Doloremque laboriosam neque reprehenderit saepe eius
 						dolorum vel consequuntur perspiciatis ad vero.
 					</p>
-				</ServiceExpandable>
-				<ServiceExpandable title="Service 3">
+				</ServiceExpandable2>
+				<ServiceExpandable2 title="Service 3">
 					<p>
 						Lorem ipsum dolor sit amet consectetur adipisicing elit.
 						Doloremque laboriosam neque reprehenderit saepe eius
 						dolorum vel consequuntur perspiciatis ad vero.
 					</p>
-				</ServiceExpandable>
-				<ServiceExpandable title="Service 4">
+				</ServiceExpandable2>
+				<ServiceExpandable2 title="Service 4">
 					<p>
 						Lorem ipsum dolor sit amet consectetur adipisicing elit.
 						Doloremque laboriosam neque reprehenderit saepe eius
 						dolorum vel consequuntur perspiciatis ad vero.
 					</p>
-				</ServiceExpandable>
+				</ServiceExpandable2>
 			</div>
 		</div>
 	)
