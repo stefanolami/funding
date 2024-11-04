@@ -141,11 +141,15 @@ export default function Infographic() {
 						</div>
 					))}
 				</div>
-				<InfographicModal
-					open={open}
-					setOpen={setOpen}
-				>
-					{clicked && (
+				{clicked && (
+					<InfographicModal
+						open={open}
+						setOpen={setOpen}
+						background={
+							infographicMobile.find((item) => item.id == clicked)
+								.color
+						}
+					>
 						<div className="flex flex-col items-center justify-center gap-3">
 							{/* <Image
 								src={`/infographic/modal/${clicked}.png`}
@@ -168,7 +172,7 @@ export default function Infographic() {
 									).label
 								}
 							</span>
-							<p className="font-unna text-xs xl:text-sm text-justify">
+							<p className="font-unna text-sm text-center">
 								{
 									infographicMobile.find(
 										(item) => item.id == clicked
@@ -176,8 +180,8 @@ export default function Infographic() {
 								}
 							</p>
 						</div>
-					)}
-				</InfographicModal>
+					</InfographicModal>
+				)}
 			</div>
 		</div>
 	)

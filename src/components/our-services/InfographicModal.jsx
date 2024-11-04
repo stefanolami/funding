@@ -8,7 +8,12 @@ import {
 	motion,
 } from 'framer-motion'
 
-export default function InfographicModal({ open, setOpen, children }) {
+export default function InfographicModal({
+	open,
+	setOpen,
+	children,
+	background,
+}) {
 	const [scope, animate] = useAnimate()
 	const [drawerRef, { height }] = useMeasure()
 
@@ -41,8 +46,8 @@ export default function InfographicModal({ open, setOpen, children }) {
 						transition={{
 							ease: 'easeInOut',
 						}}
-						className="fixed z-50 bottom-0 w-full overflow-hidden rounded-t-3xl bg-primary text-white"
-						style={{ y }}
+						className="fixed z-50 bottom-0 w-full overflow-hidden rounded-t-3xl text-white"
+						style={{ y, backgroundColor: background }}
 						drag="y"
 						dragControls={controls}
 						onDragEnd={() => {
@@ -58,12 +63,15 @@ export default function InfographicModal({ open, setOpen, children }) {
 							bottom: 0.5,
 						}}
 					>
-						<div className="absolute left-0 right-0 top-0 z-10 flex justify-center bg-primary p-4">
+						<div
+							className="absolute left-0 right-0 top-0 z-10 flex justify-center p-4"
+							style={{ backgroundColor: background }}
+						>
 							<button
 								onPointerDown={(e) => {
 									controls.start(e)
 								}}
-								className="h-2 w-14 cursor-grab touch-none rounded-full bg-primary-light active:cursor-grabbing"
+								className="h-2 w-14 cursor-grab touch-none rounded-full bg-white active:cursor-grabbing"
 							></button>
 						</div>
 						<div className="relative z-0 h-full overflow-y-scroll p-4 pt-12">
