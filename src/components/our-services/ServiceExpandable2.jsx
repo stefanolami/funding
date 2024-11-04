@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 import { FiChevronDown } from 'react-icons/fi'
 
-export default function ServiceExpandable({
+export default function ServiceExpandable2({
 	title,
 	children,
 	defaultOpen = false,

@@ -1,7 +1,7 @@
 import { useTranslations } from 'next-intl'
 import { unstable_setRequestLocale } from 'next-intl/server'
 import { getTranslations } from 'next-intl/server'
-import OurServices from '@/components/our-services/OurServices'
+import Infographic from '@/components/our-services/Infographic'
 
 export async function generateMetadata({ params: { locale } }) {
 	const t = await getTranslations({
@@ -14,12 +14,12 @@ export async function generateMetadata({ params: { locale } }) {
 	}
 }
 
-export default function OurServicesPage({ params: { locale } }) {
+export default function InfographicDesktopPage({ params: { locale } }) {
 	unstable_setRequestLocale(locale)
 	const t = useTranslations('Index')
 	return (
 		<>
-			<OurServices />
+			<Infographic />
 		</>
 	)
 }
