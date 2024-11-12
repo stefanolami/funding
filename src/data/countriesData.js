@@ -1,7 +1,9 @@
 const countriesData = [
 	{
 		name: 'Austria',
-		coordinates: [0, 0],
+		value: 'austria',
+		coordinates: [-20, 67],
+		zoom: 3,
 	},
 	{
 		name: 'Belgium',

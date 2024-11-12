@@ -14,14 +14,36 @@ const geoUrl = 'https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json'
 
 export default function YourAccess() {
 	const [selectedRegion, setSelectedRegion] = useState('')
+	const [selectedCountry, setSelectedCountry] = useState('')
 	const [zoomLevel, setZoomLevel] = useState(0.6)
 	const [zoomCenter, setZoomCenter] = useState([35, 30])
 
 	const handleRegionCLick = (region) => {
 		console.log(region)
-		setSelectedRegion(region.value)
-		setZoomCenter(region.properties.coordinates)
-		setZoomLevel(region.properties.zoom)
+		if (selectedRegion == region.value) {
+			setSelectedRegion('')
+			setZoomCenter([35, 30])
+			setZoomLevel(0.6)
+			return
+		} else {
+			setSelectedRegion(region.value)
+			setZoomCenter(region.properties.coordinates)
+			setZoomLevel(region.properties.zoom)
+		}
+	}
+	const handleCountryClick = (country) => {
+		setSelectedCountry(country)
+		const capitalizedCountry =
+			country.charAt(0).toUpperCase() + country.slice(1)
+		const countryRegion = Object.values(regions).find((region) =>
+			region.countries.includes(capitalizedCountry)
+		).value
+		console.log(countryRegion)
+		if (selectedRegion != countryRegion) {
+			setSelectedRegion(countryRegion)
+			setZoomCenter(regions[countryRegion].properties.coordinates)
+			setZoomLevel(regions[countryRegion].properties.zoom)
+		}
 	}
 	const handleResetRegion = () => {
 		setSelectedRegion('')
@@ -33,42 +55,54 @@ export default function YourAccess() {
 		setZoomCenter(center)
 	}
 	return (
-		<div className="w-full flex flex-row items-center justify-start -mt-20 -mb-32">
-			<div className="ml-[7%] -mt-24 h-screen w-[270px] bg-primary-light">
-				{/* {!selectedRegion && (
-					<ul className="m-12">
-						{Object.values(regions).map((region) => (
-							<li
-								className="cursor-pointer"
+		<div className="w-full flex flex-row items-center justify-start">
+			<div className="bg-transparent w-full absolute top-0 h-16 xl:h-24">
+				<div className="ml-[7%] h-screen w-[270px] bg-primary-light"></div>
+			</div>
+			<div className="ml-[7%] h-screen w-[270px] bg-primary-light z-20 font-jose transition-all duration-300 overflow-auto scrollbar-thin scrollbar-webkit">
+				<ul className="m-12 space-y-3">
+					{Object.values(regions).map((region, index) => (
+						<li key={index}>
+							<button
+								className={`cursor-pointer text-xl text-left ${
+									selectedRegion == region.value
+										? 'text-primary font-bold'
+										: 'text-white'
+								}`}
 								onClick={() => handleRegionCLick(region)}
-								key={region.value}
 							>
 								{region.name}
-							</li>
-						))}
-					</ul>
-				)}
-				{selectedRegion && (
-					<ul className="m-12">
-						{regions[selectedRegion].countries.map((country) => (
-							<li
-								className="cursor-pointer"
-								key={country}
-							>
-								{country}
-							</li>
-						))}
-						<li
-							className="mt-10 cursor-pointer"
-							onClick={handleResetRegion}
-							key="back"
-						>
-							Back to Regions
+							</button>
+
+							{selectedRegion == region.value ? (
+								<ul className="my-4 ml-8 z-50 space-y-3 list-disc">
+									{regions[selectedRegion].countries.map(
+										(country) => (
+											<li
+												className={`${
+													selectedCountry ==
+													country.toLowerCase()
+														? 'text-primary font-bold'
+														: 'text-white'
+												} cursor-pointer text-base`}
+												key={country}
+												onClick={() =>
+													handleCountryClick(
+														country.toLowerCase()
+													)
+												}
+											>
+												{country}
+											</li>
+										)
+									)}
+								</ul>
+							) : null}
 						</li>
-					</ul>
-				)} */}
+					))}
+				</ul>
 			</div>
-			<div className="w-[70%] h-screen -mt-24 relative">
+			<div className="your-access-map h-screen -mt-48 relative">
 				<ComposableMap
 					projection="geoMercator"
 					className="absolute top-0 w-full"
@@ -105,7 +139,17 @@ export default function YourAccess() {
 										key={geo.rsmKey}
 										geography={geo}
 										id={geo.properties.name}
-										fill="#666"
+										onClick={() =>
+											handleCountryClick(
+												geo.properties.name.toLowerCase()
+											)
+										}
+										fill={
+											selectedCountry ==
+											geo.properties.name.toLowerCase()
+												? '#004A6A'
+												: '#666'
+										}
 										/* className={
 									countriesNames.includes(geo.properties.name)
 										? ' covered-countries '

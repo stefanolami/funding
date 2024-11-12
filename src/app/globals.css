@@ -50,6 +50,10 @@
 	}
 }
 
+.your-access-map {
+	width: calc(100% - 7% - 270px);
+}
+
 input[type='checkbox'] {
 	appearance: none;
 	-webkit-appearance: none;

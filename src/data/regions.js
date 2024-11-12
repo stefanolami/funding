@@ -4,7 +4,7 @@ const regions = {
 		value: 'africa',
 		properties: {
 			coordinates: [15.69, 2.14],
-			zoom: 2.55,
+			zoom: 1.7,
 		},
 		countries: [
 			'Algeria',
@@ -22,7 +22,7 @@ const regions = {
 		value: 'asia',
 		properties: {
 			coordinates: [88.5, 50.74],
-			zoom: 1.6,
+			zoom: 1.3,
 		},
 		countries: ['China', 'Japan', 'India', 'Taiwan', 'Thailand', 'Vietnam'],
 	},
@@ -30,7 +30,7 @@ const regions = {
 		name: 'Europe',
 		value: 'europe',
 		properties: {
-			coordinates: [15.54, 56.73],
+			coordinates: [35, 48],
 			zoom: 3.03,
 		},
 		countries: [
@@ -54,8 +54,8 @@ const regions = {
 		name: 'Latin America & Caribbean',
 		value: 'latinAmerica',
 		properties: {
-			coordinates: [-65.74, -18.35],
-			zoom: 2,
+			coordinates: [-65.74, -25],
+			zoom: 1.5,
 		},
 		countries: [
 			'Argentina',
@@ -73,7 +73,7 @@ const regions = {
 		value: 'northAmerica',
 		properties: {
 			coordinates: [-103.32, 48.68],
-			zoom: 2,
+			zoom: 1.5,
 		},
 		countries: ['United States', 'Canada'],
 	},

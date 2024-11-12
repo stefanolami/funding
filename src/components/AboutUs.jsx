@@ -1,6 +1,7 @@
 export default function AboutUs() {
 	return (
-		<div className="bg-primary-light pt-24 xl:pt-44 pb-16 xl:pb-32 -mt-16 xl:-mt-24">
+		<div className="bg-primary-light pt-8 xl:pt-20 pb-16 xl:pb-32">
+			<div className="bg-primary-light w-full absolute top-0 h-16 xl:h-24"></div>
 			<div className="w-[90%] xl:w-[75%] mx-auto">
 				<h1 className="font-unna font-bold text-xl xl:text-[48px] text-center text-white mb-10">
 					ABOUT US

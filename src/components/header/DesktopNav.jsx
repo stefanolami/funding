@@ -12,9 +12,9 @@ export default function DesktopNav({ messages, inverted }) {
 			{/* CHANGE TO GRID-COLS-6 */}
 			<nav
 				id="desktop-nav"
-				className="grid grid-cols-4 text-center uppercase h-full *:px-4 text-base"
+				className="grid grid-cols-6 text-center uppercase h-full *:px-4 text-base"
 			>
-				{/* <Link
+				<Link
 					className={
 						inverted
 							? 'hover:text-white hover:bg-primary'
@@ -33,7 +33,7 @@ export default function DesktopNav({ messages, inverted }) {
 					href="/your-access"
 				>
 					{messages.yourAccess}
-				</Link> */}
+				</Link>
 				<div className="group relative flex items-center justify-center cursor-pointer">
 					<span>{messages.whoWeAre}</span>
 					<div className="hidden group-hover:flex flex-col items-center justify-center gap-1 w-full absolute top-full">
