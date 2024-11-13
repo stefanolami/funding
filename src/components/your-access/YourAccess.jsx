@@ -9,6 +9,7 @@ import {
 } from 'react-simple-maps'
 /* import countriesData from '../data/countriesData' */
 import regions from '@/data/regions'
+import { FiX } from 'react-icons/fi'
 
 const geoUrl = 'https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json'
 
@@ -17,6 +18,14 @@ export default function YourAccess() {
 	const [selectedCountry, setSelectedCountry] = useState('')
 	const [zoomLevel, setZoomLevel] = useState(0.6)
 	const [zoomCenter, setZoomCenter] = useState([35, 30])
+
+	const coveredCountries = Object.values(regions)
+		.map((region) => {
+			return region.countries.map((country) => country.value)
+		})
+		.flat()
+
+	console.log(coveredCountries)
 
 	const handleRegionCLick = (region) => {
 		console.log(region)
@@ -32,17 +41,19 @@ export default function YourAccess() {
 		}
 	}
 	const handleCountryClick = (country) => {
-		setSelectedCountry(country)
-		const capitalizedCountry =
-			country.charAt(0).toUpperCase() + country.slice(1)
 		const countryRegion = Object.values(regions).find((region) =>
-			region.countries.includes(capitalizedCountry)
-		).value
+			region.countries.some((c) => c.value == country)
+		)
 		console.log(countryRegion)
-		if (selectedRegion != countryRegion) {
-			setSelectedRegion(countryRegion)
-			setZoomCenter(regions[countryRegion].properties.coordinates)
-			setZoomLevel(regions[countryRegion].properties.zoom)
+		if (countryRegion) {
+			setSelectedCountry(country)
+			if (selectedRegion != countryRegion.value) {
+				setSelectedRegion(countryRegion.value)
+				setZoomCenter(
+					regions[countryRegion.value].properties.coordinates
+				)
+				setZoomLevel(regions[countryRegion.value].properties.zoom)
+			}
 		}
 	}
 	const handleResetRegion = () => {
@@ -77,22 +88,22 @@ export default function YourAccess() {
 							{selectedRegion == region.value ? (
 								<ul className="my-4 ml-8 z-50 space-y-3 list-disc">
 									{regions[selectedRegion].countries.map(
-										(country) => (
+										(country, index) => (
 											<li
 												className={`${
 													selectedCountry ==
-													country.toLowerCase()
+													country.value
 														? 'text-primary font-bold'
 														: 'text-white'
 												} cursor-pointer text-base`}
-												key={country}
+												key={index}
 												onClick={() =>
 													handleCountryClick(
-														country.toLowerCase()
+														country.value
 													)
 												}
 											>
-												{country}
+												{country.name}
 											</li>
 										)
 									)}
@@ -139,15 +150,20 @@ export default function YourAccess() {
 										key={geo.rsmKey}
 										geography={geo}
 										id={geo.properties.name}
-										onClick={() =>
+										onClick={() => {
+											console.log(geo.properties.value)
 											handleCountryClick(
-												geo.properties.name.toLowerCase()
+												geo.properties.value
 											)
-										}
+										}}
 										fill={
 											selectedCountry ==
-											geo.properties.name.toLowerCase()
+											geo.properties.value
 												? '#004A6A'
+												: coveredCountries.includes(
+														geo.properties.value
+												  )
+												? '#009EC2'
 												: '#666'
 										}
 										/* className={
@@ -155,13 +171,25 @@ export default function YourAccess() {
 										? ' covered-countries '
 										: ' uncovered-countries '
 								} */
-										className="hover:brightness-110 stoke-[.5px] cursor-pointer"
+										className={`hover:brightness-110 stoke-[.5px] cursor-pointer`}
 									/>
 								))
 							}
 						</Geographies>
 					</ZoomableGroup>
 				</ComposableMap>
+				{selectedCountry && (
+					<div className="bg-primary w-1/4 h-1/2 absolute bottom-10 right-10 rounded-xl font-jose text-white p-6">
+						<div className="w-full h-full relative">
+							<FiX
+								className="absolute top-0 right-0 cursor-pointer text-2xl"
+								onClick={() => setSelectedCountry('')}
+							/>
+
+							{selectedCountry}
+						</div>
+					</div>
+				)}
 			</div>
 		</div>
 	)
