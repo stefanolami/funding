@@ -79,8 +79,8 @@ const regions = {
 		name: 'Europe',
 		value: 'europe',
 		properties: {
-			coordinates: [35, 48],
-			zoom: 3.03,
+			coordinates: [35, 53],
+			zoom: 2,
 		},
 		countries: [
 			{

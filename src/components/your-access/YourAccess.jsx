@@ -151,11 +151,12 @@ export default function YourAccess() {
 										geography={geo}
 										id={geo.properties.name}
 										onClick={() => {
-											console.log(geo.properties.value)
+											console.log(geo)
 											handleCountryClick(
 												geo.properties.value
 											)
 										}}
+										stroke="#FFF"
 										fill={
 											selectedCountry ==
 											geo.properties.value
@@ -171,7 +172,7 @@ export default function YourAccess() {
 										? ' covered-countries '
 										: ' uncovered-countries '
 								} */
-										className={`hover:brightness-110 stoke-[.5px] cursor-pointer`}
+										className={`hover:brightness-110 stroke-[.3px] cursor-pointer`}
 									/>
 								))
 							}
