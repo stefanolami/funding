@@ -77,9 +77,9 @@ export default function Header(messages) {
 				</div>
 			)}
 			{!inverted && (
-				<div className="hidden xl:flex items-center justify-center w-[270px] h-full">
+				<div className="flex items-center justify-center w-auto xl:w-[270px] h-full">
 					<Link
-						className="pl-6 md:pl-0 md:py-4 xl:py-7 w-[124px] xl:w-[231px] h-[30px] xl:h-[46px] relative xl:scale-75"
+						className="pl-6 md:pl-0 md:py-4 xl:py-7 w-[124px] xl:w-[231px] aspect-[694/186] relative xl:scale-75"
 						href="/"
 					>
 						<Image
