@@ -2,11 +2,11 @@
 
 import { Link } from '@/i18n/routing'
 import { usePathname } from '@/i18n/routing'
-import { useState } from 'react'
 import DesktopLocaleSwitcher from './DesktopLocaleSwitcher'
 
 export default function DesktopNav({ messages, inverted }) {
 	const path = usePathname()
+	console.log(path)
 	return (
 		<div
 			id="desktop-nav"
@@ -18,9 +18,11 @@ export default function DesktopNav({ messages, inverted }) {
 				className="grid grid-cols-6 text-center uppercase h-full *:px-4 text-base"
 			>
 				<Link
-					className={`relative 
-						${path == '/poe' ? 'active-link' : ''}
-						${inverted ? 'hover:text-white hover:bg-primary' : 'hover:bg-primary-light'}`}
+					className={
+						inverted
+							? 'hover:text-white hover:bg-primary'
+							: 'hover:bg-primary-light'
+					}
 					href="/poe"
 				>
 					{messages.poe}
@@ -36,20 +38,12 @@ export default function DesktopNav({ messages, inverted }) {
 					{messages.yourAccess}
 				</Link>
 				<div className="group relative flex items-center justify-center cursor-pointer">
-					<span
-						className={`block
-							${path.includes('us') ? 'active-link' : ''}
-							`}
-					>
-						{messages.whoWeAre}
-					</span>
+					<span>{messages.whoWeAre}</span>
 					<div className="hidden group-hover:flex flex-col items-center justify-center gap-1 w-full absolute top-full">
 						<Link
 							href="/about-us"
 							className={`desktop-nav-li w-full h-full bg-primary py-3 hover:scale-110 hover:shadow-xl mt-1 ${
-								inverted
-									? 'text-white'
-									: 'hover:bg-primary-light'
+								inverted ? 'text-white' : ''
 							}`}
 						>
 							{messages.aboutUs}
@@ -57,9 +51,7 @@ export default function DesktopNav({ messages, inverted }) {
 						<Link
 							href="/our-team"
 							className={`desktop-nav-li w-full h-full bg-primary py-3 hover:scale-110 hover:shadow-xl mt-1 ${
-								inverted
-									? 'text-white'
-									: 'hover:bg-primary-light'
+								inverted ? 'text-white' : ''
 							}`}
 						>
 							{messages.ourTeam}
@@ -67,28 +59,22 @@ export default function DesktopNav({ messages, inverted }) {
 					</div>
 				</div>
 				<Link
-					className={`relative 
-						${path == '/services' ? 'active-link' : ''}
-						${inverted ? 'hover:text-white hover:bg-primary' : 'hover:bg-primary-light'}`}
+					className={
+						inverted
+							? 'hover:text-white hover:bg-primary'
+							: 'hover:bg-primary-light'
+					}
 					href="/services"
 				>
 					{messages.services}
 				</Link>
 				<div className="group relative flex items-center justify-center cursor-pointer">
-					<span
-						className={`block
-						${path.includes('us') ? 'active-link' : ''}
-						`}
-					>
-						{messages.whyUs}
-					</span>
+					<span>{messages.whyUs}</span>
 					<div className="hidden group-hover:flex flex-col items-center justify-center gap-1 w-full absolute top-full">
 						<Link
 							href="/about-us"
 							className={`desktop-nav-li w-full h-full bg-primary py-3 hover:scale-110 hover:shadow-xl mt-1 ${
-								inverted
-									? 'text-white'
-									: 'hover:bg-primary-light'
+								inverted ? 'text-white' : ''
 							}`}
 						>
 							{messages.overview}
@@ -128,9 +114,7 @@ export default function DesktopNav({ messages, inverted }) {
 						<Link
 							href="/about-us"
 							className={`desktop-nav-li w-full h-full bg-primary py-3 hover:scale-110 hover:shadow-xl mt-1 ${
-								inverted
-									? 'text-white'
-									: 'hover:bg-primary-light'
+								inverted ? 'text-white' : ''
 							}`}
 						>
 							{messages.clientCodex}
@@ -138,8 +122,8 @@ export default function DesktopNav({ messages, inverted }) {
 					</div>
 				</div>
 				<Link
-					className={`relative 
-						${path == '/contact' ? 'active-link' : ''}
+					className={`
+						${path == '/contact' ? 'bg-primary-light text-white' : ''}
 						${inverted ? 'hover:text-white hover:bg-primary' : 'hover:bg-primary-light'}`}
 					href="/contact"
 				>

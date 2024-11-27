@@ -33,10 +33,10 @@ export default function Header(messages) {
 
 	useEffect(() => {
 		if (path == '/your-access') {
-			setStyle({ background: 'transparent', color: '#004A6A' })
+			setStyle({ background: 'rgba(0, 74, 106, 0)', color: '#004A6A' })
 			setInverted(true)
 		} else {
-			setStyle({ background: '#004A6A', color: '#FFFFFF' })
+			setStyle({ background: 'rgba(0, 74, 106, 1)', color: '#FFFFFF' })
 			setInverted(false)
 		}
 	}, [path])

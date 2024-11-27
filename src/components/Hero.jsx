@@ -4,14 +4,14 @@ export default function Hero() {
 	return (
 		<div
 			id="hero"
-			className="bg-primary-light h-svh xl:h-screen -mt-16 xl:-mt-24 flex flex-col justify-end"
+			className="bg-primary h-svh xl:h-screen -mt-16 xl:-mt-24 flex flex-col justify-end"
 		>
 			<div className="relative w-full md:w-3/4 lg:w-2/3 xl:w-1/2 my-auto lg:my-0 lg:mb-[10vh] mx-auto aspect-[3619/2250] block">
 				<Image
-					src={'/hero/hero.png'}
+					src={'/hero/hero-blue.png'}
 					alt="hero illustration"
 					fill
-					sizes="100vw"
+					sizes="(max-width: 640px) 100vw, 70vw"
 					className="z-10"
 					loading="eager"
 				/>
