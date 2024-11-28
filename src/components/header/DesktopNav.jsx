@@ -38,7 +38,7 @@ export default function DesktopNav({ messages, inverted }) {
 				<div className="group relative flex items-center justify-center cursor-pointer">
 					<span
 						className={`block
-							${path.includes('us') ? 'active-link' : ''}
+							${path.includes('us') ? 'active-link-nested' : ''}
 							`}
 					>
 						{messages.whoWeAre}
@@ -77,7 +77,7 @@ export default function DesktopNav({ messages, inverted }) {
 				<div className="group relative flex items-center justify-center cursor-pointer">
 					<span
 						className={`block
-						${path.includes('us') ? 'active-link' : ''}
+						${path.includes('us') ? 'active-link-nested' : ''}
 						`}
 					>
 						{messages.whyUs}
