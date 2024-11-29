@@ -4,7 +4,7 @@ import ServiceExpandable from './ServiceExpandable'
 export default function OurServices() {
 	return (
 		<div className="pt-8 xl:pt-20 pb-16 xl:pb-32 w-[90%] xl:w-[75%] mx-auto">
-			<h3 className="font-unna font-bold text-xl xl:text-[48px] text-center text-black mb-8 xl:mb-16">
+			<h3 className="font-unna font-bold text-xl xl:text-[48px] text-center text-primary mb-8 xl:mb-16">
 				Our Services
 			</h3>
 			<div className="mx-auto max-w-3xl">
